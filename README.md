@@ -14,7 +14,7 @@ Za vsakega igralca bom zajel:
 
 Delovne hipoteze:
 * Ali katera izmed ocen drastično poveča igralčevo ceno na trgu?
-* Koliko je odvisna velikost igralca od položaja na igrišču?
+* Kako je odvisna velikost igralca od položaja na igrišču?
 * Ali so povprečne ocene sorazmerne z ostalimi ocenami ali na to vpliva še kaj drugega?
 * Ali imata ocena tehnične sposobnosti in udarca z šibkejšo nogo sploh kakšen vpliv na ceno oziroma oceno?
 * Ali bi lahko glede na ocen ocenili položaj na katerem igra?
