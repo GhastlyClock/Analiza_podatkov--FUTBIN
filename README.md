@@ -10,7 +10,7 @@ Za vsakega igralca bom zajel:
 * njegovo povprečno oceno in oceno hitrosti, strela, podaj, driblanja, obrambe in fizične pripravljenosti
 * oceno tehnične sposobnosti in udarca z šibkejšo nogo
 * višino
-* popularnost pri igralcih igrice
+* popularnost pri igralcih igre
 
 Delovne hipoteze:
 * Ali katera izmed ocen drastično poveča igralčevo ceno na trgu?
