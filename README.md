@@ -17,7 +17,7 @@ Delovne hipoteze:
 * Koliko je odvisna velikost igralca od položaja na igrišču?
 * Ali so povprečne ocene sorazmerne z ostalimi ocenami ali na to vpliva še kaj drugega?
 * Ali imata ocena tehnične sposobnosti in udarca z šibkejšo nogo sploh kakšen vpliv na ceno oziroma oceno?
-* Ali bi lahko glede na ocene ocenili položaj na katerem igra?
+* Ali bi lahko glede na ocen ocenili položaj na katerem igra?
 * Kako klub, liga in državljanstvo vplivajo na igralčevo ceno?
 
 **OPOMBA:** iz analize so izvzeti igralci na položaju _golmana_, ker njihove ocene niso skladne z ostalimi. 
