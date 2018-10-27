@@ -11,7 +11,7 @@ vzorec_odseka = re.compile(
 vzorec_igralca = re.compile(
         r'<a href="/19/player/(?P<id>\d+)/(?P<ime>\D*)?" class="player_name_players_table">(?P<vzdevek>\D*)?</a>.*?'
         r'&club=(?P<id_kluba>\d+)" data-original-title="(?P<klub>.*?)" data-toggle="tooltip".*?'
-        r'nation=(?P<id_drzave>\d+)" data-original-title="(?P<država>\D+)?" data-toggle="tooltip".*?'
+        r'nation=(?P<id_države>\d+)" data-original-title="(?P<država>\D+)?" data-toggle="tooltip".*?'
         r'&league=(?P<id_lige>\d+)" data-original-title="(?P<liga>.+)?" data-toggle="tooltip".*?'
         r'<td><span class="form rating ut19.*?">(?P<ocena>\d+)</span></td>.*?'
         r'<td class="">(?P<pozicija>\w+)</td>.*?'
@@ -28,6 +28,11 @@ vzorec_igralca = re.compile(
         r'<td class="mobile-hide-table-col">(?P<popularnost>.*?)</td>',
         re.DOTALL
     )
+imena_polj = [
+    'id', 'ime', 'vzdevek', 'id_kluba', 'klub', 'id_države', 'država', 'id_lige',
+    'liga', 'ocena', 'pozicija', 'cena', 'spretnost', 'šibka_noga', 'hitrost', 'strel',
+    'podaje', 'dribling', 'obramba', 'fizičnost', 'višina', 'popularnost'
+    ]
 
 def obdelava_spletne_strani(st_strani):
     url = ('https://www.futbin.com/19/players'
@@ -57,7 +62,7 @@ def obdelaj_igralca(odsek):
     '''Vsakega igralca posebej obdela, počisti vse nepotrebne napake, ki se zgodijo, ko 
     program izbira golo besedilo s html kode in vrne iskane podatke v obliki slovarja'''
     igralec = vzorec_igralca.search(odsek).groupdict()
-    st_atributi = ['id', 'id_kluba', 'id_drzave', 'id_lige', 'ocena',
+    st_atributi = ['id', 'id_kluba', 'id_države', 'id_lige', 'ocena',
     'spretnost', 'šibka_noga', 'hitrost', 'strel', 'podaje', 'dribling',
     'obramba', 'fizičnost', 'višina', 'popularnost']
     for vzorec in st_atributi:
@@ -74,3 +79,4 @@ for i in range(1, 101):
 igralci.sort(key=lambda igralec: igralec['id'])
 
 orodja.zapisi_json(igralci, 'igralci.json')
+orodja.zapisi_csv(igralci, imena_polj, 'igralci.csv')
