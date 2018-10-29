@@ -1,0 +1,366 @@
+id_lige,liga,id_kluba,klub
+1,Superliga,269,Brøndby IF
+1,Superliga,819,FC København
+1,Superliga,820,Aalborg BK
+1,Superliga,1516,FC Midtjylland
+4,Belgium Pro League,229,RSC Anderlecht
+4,Belgium Pro League,230,Royal Antwerp FC
+4,Belgium Pro League,231,Club Brugge KV
+4,Belgium Pro League,232,Standard de Liège
+4,Belgium Pro League,670,Sporting Charleroi
+4,Belgium Pro League,673,KRC Genk
+4,Belgium Pro League,674,KAA Gent
+4,Belgium Pro League,682,KV Oostende
+4,Belgium Pro League,2013,KAS Eupen
+4,Belgium Pro League,15005,SV Zulte-Waregem
+4,Belgium Pro League,100081,KV Kortrijk
+10,Eredivisie,245,Ajax
+10,Eredivisie,246,Feyenoord
+10,Eredivisie,247,PSV
+10,Eredivisie,634,Fortuna Sittard
+10,Eredivisie,650,ADO Den Haag
+10,Eredivisie,1903,FC Utrecht
+10,Eredivisie,1906,AZ
+10,Eredivisie,1907,Willem II
+10,Eredivisie,1909,Vitesse
+10,Eredivisie,1913,SC Heerenveen
+10,Eredivisie,1914,PEC Zwolle
+10,Eredivisie,100634,Heracles Almelo
+13,Premier League,1,Arsenal
+13,Premier League,5,Chelsea
+13,Premier League,7,Everton
+13,Premier League,9,Liverpool
+13,Premier League,10,Manchester City
+13,Premier League,11,Manchester United
+13,Premier League,13,Newcastle United
+13,Premier League,17,Southampton
+13,Premier League,18,Tottenham Hotspur
+13,Premier League,19,West Ham United
+13,Premier League,95,Leicester City
+13,Premier League,110,Wolverhampton Wanderers
+13,Premier League,144,Fulham
+13,Premier League,1795,Watford
+13,Premier League,1796,Burnley
+13,Premier League,1799,Crystal Palace
+13,Premier League,1808,Brighton & Hove Albion
+13,Premier League,1939,Huddersfield Town
+13,Premier League,1943,Bournemouth
+13,Premier League,1961,Cardiff City
+14,EFL Championship,2,Aston Villa
+14,EFL Championship,3,Blackburn Rovers
+14,EFL Championship,8,Leeds United
+14,EFL Championship,12,Middlesbrough
+14,EFL Championship,14,Nottingham Forest
+14,EFL Championship,15,Queens Park Rangers
+14,EFL Championship,91,Derby County
+14,EFL Championship,97,Millwall
+14,EFL Championship,109,West Bromwich Albion
+14,EFL Championship,1792,Norwich City
+14,EFL Championship,1793,Reading
+14,EFL Championship,1794,Sheffield United
+14,EFL Championship,1801,Preston North End
+14,EFL Championship,1806,Stoke City
+14,EFL Championship,1807,Sheffield Wednesday
+14,EFL Championship,1925,Brentford
+14,EFL Championship,1952,Hull City
+14,EFL Championship,1960,Swansea City
+16,Ligue 1 Conforama,59,FC Girondins de Bordeaux
+16,Ligue 1 Conforama,62,En Avant de Guingamp
+16,Ligue 1 Conforama,65,LOSC Lille
+16,Ligue 1 Conforama,66,Olympique Lyonnais
+16,Ligue 1 Conforama,69,AS Monaco Football Club SA
+16,Ligue 1 Conforama,70,Montpellier Hérault SC
+16,Ligue 1 Conforama,71,FC Nantes
+16,Ligue 1 Conforama,72,OGC Nice
+16,Ligue 1 Conforama,73,Paris Saint-Germain
+16,Ligue 1 Conforama,74,Stade Rennais FC
+16,Ligue 1 Conforama,76,RC Strasbourg Alsace
+16,Ligue 1 Conforama,210,Stade Malherbe Caen
+16,Ligue 1 Conforama,219,Olympique de Marseille
+16,Ligue 1 Conforama,379,Stade de Reims
+16,Ligue 1 Conforama,1530,Angers SCO
+16,Ligue 1 Conforama,1809,Toulouse Football Club
+16,Ligue 1 Conforama,1816,Amiens SC
+16,Ligue 1 Conforama,1819,AS Saint-Étienne
+16,Ligue 1 Conforama,110569,Dijon FCO
+17,Domino’s Ligue 2,57,AJ Auxerre
+17,Domino’s Ligue 2,64,Racing Club de Lens
+17,Domino’s Ligue 2,68,Football Club de Metz
+17,Domino’s Ligue 2,217,FC Lorient
+17,Domino’s Ligue 2,614,Athlétic Club Ajaccio
+17,Domino’s Ligue 2,1738,Havre Athletic Club
+19,Bundesliga,21,FC Bayern München
+19,Bundesliga,22,Borussia Dortmund
+19,Bundesliga,23,Borussia Mönchengladbach
+19,Bundesliga,25,Sport-Club Freiburg
+19,Bundesliga,32,Bayer 04 Leverkusen
+19,Bundesliga,34,FC Schalke 04
+19,Bundesliga,36,VfB Stuttgart
+19,Bundesliga,38,SV Werder Bremen
+19,Bundesliga,166,Hertha BSC
+19,Bundesliga,169,1. FSV Mainz 05
+19,Bundesliga,171,1. FC Nürnberg
+19,Bundesliga,175,VfL Wolfsburg
+19,Bundesliga,485,Hannover 96
+19,Bundesliga,1824,Eintracht Frankfurt
+19,Bundesliga,10029,TSG 1899 Hoffenheim
+19,Bundesliga,100409,FC Augsburg
+19,Bundesliga,110636,Fortuna Düsseldorf
+19,Bundesliga,112172,RB Leipzig
+20,Bundesliga 2,28,Hamburger SV
+20,Bundesliga 2,31,1. FC Köln
+20,Bundesliga 2,159,DSC Arminia Bielefeld
+20,Bundesliga 2,160,VfL Bochum 1848
+20,Bundesliga 2,576,Holstein Kiel
+20,Bundesliga 2,1825,MSV Duisburg
+20,Bundesliga 2,1831,1. FC Union Berlin
+20,Bundesliga 2,110329,FC St. Pauli
+20,Bundesliga 2,110502,SV Darmstadt 98
+20,Bundesliga 2,111235,1. FC Heidenheim 1846
+20,Bundesliga 2,111239,FC Ingolstadt 04
+31,Serie A TIM,39,Atalanta
+31,Serie A TIM,44,Inter
+31,Serie A TIM,45,Juventus
+31,Serie A TIM,46,Lazio
+31,Serie A TIM,47,Milan
+31,Serie A TIM,48,Napoli
+31,Serie A TIM,50,Parma
+31,Serie A TIM,52,Roma
+31,Serie A TIM,54,Torino
+31,Serie A TIM,55,Udinese
+31,Serie A TIM,189,Bologna
+31,Serie A TIM,192,Chievo Verona
+31,Serie A TIM,1746,Empoli
+31,Serie A TIM,1837,Sampdoria
+31,Serie A TIM,1842,Cagliari
+31,Serie A TIM,110374,Fiorentina
+31,Serie A TIM,110556,Genoa
+31,Serie A TIM,111657,Frosinone
+31,Serie A TIM,111974,Sassuolo
+31,Serie A TIM,112791,SPAL
+32,Calcio B,190,Brescia
+32,Calcio B,205,Venezia
+32,Calcio B,206,Hellas Verona
+32,Calcio B,1843,Palermo
+32,Calcio B,1844,Livorno
+32,Calcio B,110373,Salerno
+32,Calcio B,110911,Foggia
+32,Calcio B,112026,Benevento
+32,Calcio B,112409,Carpi
+39,Major League Soccer,687,Columbus Crew SC
+39,Major League Soccer,688,D.C. United
+39,Major League Soccer,689,New York Red Bulls
+39,Major League Soccer,691,New England Revolution
+39,Major League Soccer,693,Chicago Fire Soccer Club
+39,Major League Soccer,695,FC Dallas
+39,Major League Soccer,696,Sporting Kansas City
+39,Major League Soccer,697,LA Galaxy
+39,Major League Soccer,698,Houston Dynamo
+39,Major League Soccer,101112,Vancouver Whitecaps FC
+39,Major League Soccer,111065,Real Salt Lake
+39,Major League Soccer,111138,Minnesota United FC
+39,Major League Soccer,111139,Impact Montréal
+39,Major League Soccer,111140,Portland Timbers
+39,Major League Soccer,111144,Seattle Sounders FC
+39,Major League Soccer,111651,Toronto FC
+39,Major League Soccer,111928,San Jose Earthquakes
+39,Major League Soccer,112134,Philadelphia Union
+39,Major League Soccer,112606,Orlando City Soccer Club
+39,Major League Soccer,112828,New York City FC
+39,Major League Soccer,112885,Atlanta United
+39,Major League Soccer,112996,Los Angeles Football Club
+41,Eliteserien,298,Rosenborg BK
+41,Eliteserien,417,Molde FK
+41,Eliteserien,919,SK Brann
+50,Scottish Premiership,77,Aberdeen
+50,Scottish Premiership,78,Celtic
+50,Scottish Premiership,80,Heart of Midlothian
+50,Scottish Premiership,86,Rangers FC
+53,LaLiga Santander,240,Atlético Madrid
+53,LaLiga Santander,241,FC Barcelona
+53,LaLiga Santander,243,Real Madrid
+53,LaLiga Santander,448,Athletic Club
+53,LaLiga Santander,449,Real Betis
+53,LaLiga Santander,450,RC Celta
+53,LaLiga Santander,452,RCD Espanyol
+53,LaLiga Santander,457,Real Sociedad
+53,LaLiga Santander,461,Valencia CF
+53,LaLiga Santander,462,R. Valladolid CF
+53,LaLiga Santander,463,D. Alavés
+53,LaLiga Santander,467,SD Eibar
+53,LaLiga Santander,480,Rayo Vallecano
+53,LaLiga Santander,481,Sevilla FC
+53,LaLiga Santander,483,Villarreal CF
+53,LaLiga Santander,1853,Levante UD
+53,LaLiga Santander,1860,Getafe CF
+53,LaLiga Santander,100888,CD Leganés
+53,LaLiga Santander,110062,Girona FC
+53,LaLiga Santander,110839,SD Huesca
+54,LaLiga 1 I 2 I 3,242,RC Deportivo
+54,LaLiga 1 I 2 I 3,244,R. Zaragoza
+54,LaLiga 1 I 2 I 3,260,CD Tenerife
+54,LaLiga 1 I 2 I 3,459,R. Sporting
+54,LaLiga 1 I 2 I 3,472,UD Las Palmas
+54,LaLiga 1 I 2 I 3,477,CD Numancia
+54,LaLiga 1 I 2 I 3,479,CA Osasuna
+54,LaLiga 1 I 2 I 3,573,Málaga CF
+54,LaLiga 1 I 2 I 3,1968,Cádiz CF
+54,LaLiga 1 I 2 I 3,15019,Nàstic
+54,LaLiga 1 I 2 I 3,110827,R. Oviedo
+54,LaLiga 1 I 2 I 3,110831,CD Lugo
+54,LaLiga 1 I 2 I 3,110832,Granada CF
+56,Allsvenskan,320,Malmö FF
+56,Allsvenskan,433,AIK
+56,Allsvenskan,710,Djurgårdens IF
+60,EFL League One,106,Sunderland
+63,Hellas Liga,278,AEK Athens
+63,Hellas Liga,280,Olympiacos CFP
+63,Hellas Liga,393,PAOK
+63,Hellas Liga,1884,Panathinaikos FC
+66,Ekstraklasa,873,Lech Poznań
+66,Ekstraklasa,1871,Legia Warszawa
+68,Süper Lig,325,Galatasaray SK
+68,Süper Lig,326,Fenerbahçe SK
+68,Süper Lig,327,Beşiktaş JK
+68,Süper Lig,436,Trabzonspor
+68,Süper Lig,741,Antalyaspor
+68,Süper Lig,742,Bursaspor
+68,Süper Lig,749,Büyükşehir Belediye Erzurumspor
+68,Süper Lig,101007,MKE Ankaragücü
+68,Süper Lig,101014,Medipol Başakşehir FK
+68,Süper Lig,101020,Kayserispor
+68,Süper Lig,101026,Göztepe SK
+68,Süper Lig,101033,Atiker Konyaspor
+68,Süper Lig,101037,Çaykur Rizespor
+68,Süper Lig,101041,Sivasspor
+68,Süper Lig,111339,Kasimpaşa SK
+68,Süper Lig,111340,Akhisar Belediyespor
+68,Süper Lig,113142,Alanyaspor
+68,Süper Lig,113259,Evkur Yeni Malatyaspor
+80,Österreichische Fußball-Bundesliga,191,FC Red Bull Salzburg
+80,Österreichische Fußball-Bundesliga,209,SK Sturm Graz
+80,Österreichische Fußball-Bundesliga,254,SK Rapid Wien
+80,Österreichische Fußball-Bundesliga,256,FK Austria Wien
+83,K LEAGUE Classic,1473,Ulsan Hyundai Horang-i
+189,Raiffeisen Super League,322,Grasshopper Club Zürich
+189,Raiffeisen Super League,896,FC Basel
+189,Raiffeisen Super League,900,BSC Young Boys
+189,Raiffeisen Super League,110770,FC Sion
+308,Liga NOS,234,SL Benfica
+308,Liga NOS,236,FC Porto
+308,Liga NOS,237,Sporting CP
+308,Liga NOS,518,Chaves
+308,Liga NOS,665,Vitória Setúbal
+308,Liga NOS,666,Desportivo Aves
+308,Liga NOS,744,Rio Ave FC
+308,Liga NOS,1887,Vitória Guimarães
+308,Liga NOS,1893,CS Marítimo
+308,Liga NOS,1896,SC Braga
+308,Liga NOS,1898,Boavista FC
+308,Liga NOS,1900,Moreirense FC
+308,Liga NOS,10019,CD Feirense
+308,Liga NOS,10031,Portimonense SC
+308,Liga NOS,112516,Tondela
+317,Liga Hrvatska,211,GNK Dinamo Zagreb
+319,Česká Liga,266,Slavia Praha
+319,Česká Liga,267,Sparta Praha
+319,Česká Liga,110468,Viktoria Plzeň
+332,Ukrayina Liha,101047,FC Dynamo Kyiv
+332,Ukrayina Liha,101059,Shakhtar Donetsk
+335,Campeonato Scotiabank,15029,Universidad de Chile
+335,Campeonato Scotiabank,110975,Universidad Católica
+335,Campeonato Scotiabank,110980,CD Viñazur
+335,Campeonato Scotiabank,112534,CD Universidad de Concepción
+336,Liga Dimayor,101099,América de Cali
+336,Liga Dimayor,101100,Atlético Nacional
+336,Liga Dimayor,101101,Junior FC
+336,Liga Dimayor,101102,Deportivo Cali
+336,Liga Dimayor,101104,Independiente Santa Fe
+336,Liga Dimayor,101105,Millonarios FC
+341,LIGA Bancomer MX,1028,Monarcas Morelia
+341,LIGA Bancomer MX,1032,Monterrey
+341,LIGA Bancomer MX,1878,Cruz Azul
+341,LIGA Bancomer MX,1879,Club América
+341,LIGA Bancomer MX,1880,Guadalajara
+341,LIGA Bancomer MX,1881,U.N.A.M.
+341,LIGA Bancomer MX,1882,Deportivo Toluca
+341,LIGA Bancomer MX,1970,Tigres U.A.N.L.
+341,LIGA Bancomer MX,101114,Club Atlas
+341,LIGA Bancomer MX,101121,Club Necaxa
+341,LIGA Bancomer MX,110144,Santos Laguna
+341,LIGA Bancomer MX,110147,Pachuca
+341,LIGA Bancomer MX,110150,Querétaro
+341,LIGA Bancomer MX,110781,Club León
+341,LIGA Bancomer MX,111678,Club Tijuana
+347,South African FL,110929,Kaizer Chiefs
+347,South African FL,110930,Orlando Pirates
+349,Meiji Yasuda J1 League,101145,Kashiwa Reysol
+349,Meiji Yasuda J1 League,101146,Vissel Kobe
+349,Meiji Yasuda J1 League,101147,Kashima Antlers
+349,Meiji Yasuda J1 League,101148,Cerezo Osaka
+349,Meiji Yasuda J1 League,101150,F.C. Tokyo
+349,Meiji Yasuda J1 League,101151,Yokohama F・Marinos
+349,Meiji Yasuda J1 League,111575,Urawa Red Diamonds
+349,Meiji Yasuda J1 League,111730,Kawasaki Frontale
+349,Meiji Yasuda J1 League,112092,Nagoya Grampus
+349,Meiji Yasuda J1 League,113157,Sanfrecce Hiroshima
+349,Meiji Yasuda J1 League,113160,Sagan Tosu
+350,Saudi Professional League,605,Al Hilal
+350,Saudi Professional League,607,Al Ittihad
+350,Saudi Professional League,111674,Al Shabab
+350,Saudi Professional League,112096,Ettifaq FC
+350,Saudi Professional League,112139,Al Nassr
+350,Saudi Professional League,112387,Al Ahli
+350,Saudi Professional League,112390,Al Fateh
+350,Saudi Professional League,112391,Al Qadisiyah
+350,Saudi Professional League,112393,Al Taawoun
+350,Saudi Professional League,112408,Al Wehda
+350,Saudi Professional League,113057,Al Fayha
+351,Hyundai A-League,111395,Brisbane Roar
+351,Hyundai A-League,111397,Melbourne Victory
+351,Hyundai A-League,111399,Perth Glory
+351,Hyundai A-League,111400,Sydney FC
+351,Hyundai A-League,112224,Melbourne City
+351,Hyundai A-League,112427,Western Sydney Wanderers
+353,SAF,1013,San Lorenzo de Almagro
+353,SAF,1876,River Plate
+353,SAF,1877,Buenos Aires
+353,SAF,101083,Estudiantes de La Plata
+353,SAF,101084,Gimnasia y Esgrima La Plata
+353,SAF,101085,Racing Club
+353,SAF,101088,Vélez Sarsfield
+353,SAF,110093,Independiente
+353,SAF,110395,Club Atlético Lanús
+353,SAF,110396,Newell's Old Boys
+353,SAF,110404,Club Atlético Banfield
+353,SAF,110406,Colón de Santa Fe
+353,SAF,110580,Rosario Central
+353,SAF,110581,Patronato
+353,SAF,111019,Argentinos Juniors
+353,SAF,111022,Belgrano de Córdoba
+353,SAF,111706,Godoy Cruz
+353,SAF,111707,Club Atlético Aldosivi
+353,SAF,111710,Defensa y Justicia
+353,SAF,111711,Club Atlético Huracán
+353,SAF,111715,Club Atlético Tigre
+353,SAF,111716,Unión de Santa Fe
+353,SAF,112670,Club Atlético Talleres
+2012,CSL,110955,Shanghai Greenland Shenhua FC
+2012,CSL,111724,Shandong Luneng Taishan
+2012,CSL,111768,Beijing Guoan
+2012,CSL,111769,Changchun Yatai FC
+2012,CSL,111774,Tianjin TEDA FC
+2012,CSL,111779,Henan Jianye FC
+2012,CSL,111839,Guangzhou Evergrande Taobao
+2012,CSL,112162,Jiangsu Suning FC
+2012,CSL,112165,Chongqing Lifan FC
+2012,CSL,112378,Dalian Yifang FC
+2012,CSL,112429,Guangzhou R&F FC
+2012,CSL,112537,Beijing Renhe
+2012,CSL,112540,Shanghai SIPG FC
+2012,CSL,112977,Guizhou Hengfeng FC
+2012,CSL,112978,Hebei China Fortune FC
+2012,CSL,112983,Tianjin Quanjian FC
+3006,League of Russia,315,CSKA Moscow
+3006,League of Russia,100765,Lokomotiv Moscow
+3006,League of Russia,100767,Spartak Moscow

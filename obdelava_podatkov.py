@@ -23,7 +23,7 @@ vzorec_igralca = re.compile(
         r'<td><span class="badge .*? p-2 font-weight-normal">(?P<podaje>\d+)</span></td>.*?'
         r'<td><span class="badge .*? p-2 font-weight-normal">(?P<dribling>\d+)</span></td>.*?'
         r'<td><span class="badge .*? p-2 font-weight-normal">(?P<obramba>\d+)</span></td>.*?'
-        r'<td><span class="badge .*? p-2 font-weight-normal">(?P<fizičnost>\d+)</span></td>.*?'
+        r'<td><span class="badge .*? p-2 font-weight-normal">(?P<fizika>\d+)</span></td>.*?'
         r'<td>(?P<višina>\d+)cm.*?'
         r'<td class="mobile-hide-table-col">(?P<popularnost>.*?)</td>',
         re.DOTALL
@@ -31,7 +31,7 @@ vzorec_igralca = re.compile(
 imena_polj = [
     'id', 'ime', 'vzdevek', 'id_kluba', 'klub', 'id_države', 'država', 'id_lige',
     'liga', 'ocena', 'pozicija', 'cena', 'spretnost', 'šibka_noga', 'hitrost', 'strel',
-    'podaje', 'dribling', 'obramba', 'fizičnost', 'višina', 'popularnost'
+    'podaje', 'dribling', 'obramba', 'fizika', 'višina', 'popularnost'
     ]
 
 def obdelava_spletne_strani(st_strani):
@@ -64,7 +64,7 @@ def obdelaj_igralca(odsek):
     igralec = vzorec_igralca.search(odsek).groupdict()
     st_atributi = ['id', 'id_kluba', 'id_države', 'id_lige', 'ocena',
     'spretnost', 'šibka_noga', 'hitrost', 'strel', 'podaje', 'dribling',
-    'obramba', 'fizičnost', 'višina', 'popularnost']
+    'obramba', 'fizika', 'višina', 'popularnost']
     for vzorec in st_atributi:
         igralec[vzorec] = int(igralec[vzorec]) 
     if igralec['ime'] == igralec['vzdevek']:    # Preverim ali je igralčev vzdevek enak polnemu imenu
@@ -72,11 +72,33 @@ def obdelaj_igralca(odsek):
     igralec['cena'] = razberi_ceno(igralec['cena'])
     return igralec
 
+def izloci_klub(igralci):
+    klubi = []
+    videni_klubi = set()
+    for igralec in igralci:
+        id_kluba, klub, id_lige, liga = (
+            igralec['id_kluba'],
+            igralec.pop('klub'),
+            igralec.pop('id_lige'),
+            igralec.pop('liga')
+        )
+        if id_kluba not in videni_klubi:
+            videni_klubi.add(id_kluba)
+            klubi.append(
+                {'id_lige': id_lige, 'liga': liga, 'id_kluba': id_kluba, 'klub': klub}
+            )
+    klubi.sort(key=lambda klub: (klub['id_lige'], klub['id_kluba']))
+    return klubi
+
+
 igralci = []
 for i in range(1, 101):
     for igralec in obdelava_spletne_strani(i):
         igralci.append(igralec)
 igralci.sort(key=lambda igralec: igralec['id'])
-
 orodja.zapisi_json(igralci, 'igralci.json')
-orodja.zapisi_csv(igralci, imena_polj, 'igralci.csv')
+# Zaradi preglednost CSV datoteke odstranim nekatere stolpce, ki so razvidni z id_lige
+klubi = izloci_klub(igralci)
+nova_imena_polj = [i for i in imena_polj if i not in ('klub', 'id_lige', 'liga')]
+orodja.zapisi_csv(igralci, nova_imena_polj, 'igralci.csv')
+orodja.zapisi_csv(klubi, ['id_lige', 'liga', 'id_kluba', 'klub'], 'klubi.csv')
