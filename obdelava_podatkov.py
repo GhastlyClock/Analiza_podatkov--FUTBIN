@@ -41,7 +41,6 @@ def obdelava_spletne_strani(st_strani):
     ).format(st_strani)
     ime_datoteke = 'igralci-Fife19-{}.html'.format(str(st_strani))
     orodja.shrani_spletno_stran(url, ime_datoteke)
-    vsebina = orodja.vsebina_datoteke(ime_datoteke, orodja.IMENIK_HTML)
     odseki_igralcev = orodja.razdeli_stran_na_igralce(ime_datoteke, vzorec_odseka)
     for igralec in odseki_igralcev:
         yield obdelaj_igralca(igralec)
