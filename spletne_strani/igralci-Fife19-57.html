@@ -28,7 +28,7 @@
 
 
     <link rel="stylesheet" href="https://cdn.futbin.com/design/css/main.css?v=190918175217"/>
-    <link rel="stylesheet" href="https://cdn.futbin.com/design/css/mdb.css?v=191018103408"/>
+    <link rel="stylesheet" href="https://cdn.futbin.com/design/css/mdb.css?v=011118090054"/>
 <!--    --><!--        <link rel="stylesheet" href="--><!--/design/css/mdb.css?v=--><!--"/>-->
 <!--    --><!--        <link rel="stylesheet" href="--><!--/design/css/mdb.min.css?v=--><!--"/>-->
 <!--    -->
@@ -69,7 +69,7 @@
     <link rel="stylesheet"  href="https://cdn.futbin.com/design/css/hover-min.css?v=190918175218" />
 <link rel="stylesheet"  href="https://cdn.futbin.com/design/plugins/icheck-1.x/skins/all.css?v=190918175213" />
 <link rel="stylesheet"  href="https://cdn.futbin.com/design/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-shadow.min.css?v=190918175216" />
-<link rel="stylesheet"  href="https://cdn.futbin.com/design/css/pages/players.min.css?v=200717222617" />
+
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -106,7 +106,7 @@
 
 
 
-    <meta name='general_csrf-name' content='cf304be0689e22f48da880f9e621b12c7bc548fdfff48028b20ab01cb30d447553571445401fc677b0631d7df7dd3076f6fdaeece7f2f790a2949a7fa9268300'><meta name='general_csrf-value' content='c4a3f746634986a6a9e12bd5d50d12fbb43a3a51866b60f842c5b6374e4911153418f91044f83c17a9acb401df657af7f59f3bd3a2c154421899f77386563d6b'>    
+    <meta name='general_csrf-name' content='58b4247012ad74e5c69d28afeb43d835b5231d0374ac9ea316760e31e4997e375933bfd1ecf960e126920f864a22f71f745753ba36c393a3fcbd8cb9dcd5a948'><meta name='general_csrf-value' content='a9497014872ead543d0bba9c332ff9e8147a027ed512d47ef69919df72cc7a4724f3867493be38b0ca3fe0ecae8284dedd282ae80f2f81591677bf0dbebd1b57'>    
 
 
             <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
@@ -276,13 +276,42 @@
                          </div>
                      </li>
 
+                     
+
+                     <li><a class="collapsible-header waves-effect arrow-r"><i class="icon-fire "></i> Live <i class="fa fa-angle-down rotate-icon"></i></a>
+                         <div class="collapsible-body">
+                             <ul>
+
+                                 <li><a href="/fut-live-scores" class="waves-effect"><i class="icon-feed"></i>  FUT Live Scores</a></li>
+                                 <li><a href="/otw" class="waves-effect"><i class="icon-eye"></i> OTW Watch</a></li>
+                                 <li><a href="/totw-predictions" class="waves-effect"><i class="icon-trophy4"></i> TOTW Contenders</a></li>
+                                 <li><a href="/potm-contenders" class="waves-effect"><i class="icon-racing"></i> POTM Contenders</a></li>
+
+
+                             </ul>
+                         </div>
+                     </li>
 
 
 
+                     <li>
+                         <a class="waves-effect" href="/division-rivals/division">
+                             <img style="width: 20px;"  src="/design/img/rivals_small_19.png">
+                             Division Rivals
+                         </a>
+                     </li>
                      <li><a href="/champions/leaderboard" class="waves-effect"><img alt="p" style="width: 22px;" src="/design/img/champs_small_19.png"> FUT Champions</a></li>
                      <li><a href="/picks" class="waves-effect"><img alt="p" style="width: 22px;" src="/design/img/shapes/picks/picks-icon.png"> Picks</a></li>
 
-                     
+
+
+
+
+
+
+
+
+
 
 
                      <!-- PLAYER MENU  -->
@@ -330,24 +359,26 @@
                      </li>
 
                      <!-- WC MENU  -->
-                     <li><a class="collapsible-header waves-effect arrow-r">  <img  style="width: 13px; position: relative; top: -1px;" src="/design/img/shapes/wc/18/wc_logo_2.png">World Cup <i class="fa fa-angle-down rotate-icon"></i></a>
-                         <div class="collapsible-body">
-                             <ul>
-                                 <li><a href="/world-cup" class="waves-effect">Main</a></li>
-                                 <li><a href="/world-cup/players" class="waves-effect">Players</a></li>
-                                 <li><a href="/world-cup/upgrades" class="waves-effect">Upgrades</a></li>
-                                 <li><a href="/world-cup/latest" class="waves-effect">Latest Players </a></li>
-                                 <li><a href="/world-cup-builder" class="waves-effect"><i class="icon-hammer-wrench nav-small-icons"></i> Squad Builder </a></li>
-                                 <li><a href="/world-cup-builder/draft" class="waves-effect"><img style="width: 20px; position: relative; top:-2px;" src="/design/img/shapes/wc/18/draft/draft-card-small-78.png" /> WC Draft </a></li>
-                                 <li><a href="/world-cup/squad-building-challenges" class="waves-effect"><img alt="" style="width: 20px;" src="/design/img/shapes/wc/18/sbc_small.png"> SBC</a></li>
-                                 <li><a href="/world-cup/kits" class="waves-effect">Kits</a></li>
-                                 <li><a href="/world-cup/stadiums" class="waves-effect">Stadiums</a></li>
-                                 <li><a href="/world-cup/groups" class="waves-effect">Groups</a></li>
-                                 <li><a href="/world-cup/schedule" class="waves-effect">Schedule</a></li>
+<!--                     <li><a class="collapsible-header waves-effect arrow-r">  <img  style="width: 13px; position: relative; top: -1px;" src="/design/img/shapes/wc/18/wc_logo_2.png">--><!-- <i class="fa fa-angle-down rotate-icon"></i></a>-->
+<!--                         <div class="collapsible-body">-->
+<!--                             <ul>-->
+<!--                                 <li><a href="/world-cup" class="waves-effect">--><!--</a></li>-->
+<!--                                 <li><a href="/world-cup/players" class="waves-effect">--><!--</a></li>-->
+<!--                                 <li><a href="/world-cup/upgrades" class="waves-effect">--><!--</a></li>-->
+<!--                                 <li><a href="/world-cup/latest" class="waves-effect">--><!-- </a></li>-->
+<!--                                 <li><a href="/world-cup-builder" class="waves-effect"><i class="icon-hammer-wrench nav-small-icons"></i> --><!-- </a></li>-->
+<!--                                 <li><a href="/world-cup-builder/draft" class="waves-effect"><img style="width: 20px; position: relative; top:-2px;" src="/design/img/shapes/wc/18/draft/draft-card-small-78.png" /> WC --><!-- </a></li>-->
+<!--                                 <li><a href="/world-cup/squad-building-challenges" class="waves-effect"><img alt="" style="width: 20px;" src="/design/img/shapes/wc/18/sbc_small.png"> SBC</a></li>-->
+<!--                                 <li><a href="/world-cup/kits" class="waves-effect">--><!--</a></li>-->
+<!--                                 <li><a href="/world-cup/stadiums" class="waves-effect">--><!--</a></li>-->
+<!--                                 <li><a href="/world-cup/groups" class="waves-effect">--><!--</a></li>-->
+<!--                                 <li><a href="/world-cup/schedule" class="waves-effect">--><!--</a></li>-->
+<!---->
+<!--                             </ul>-->
+<!--                         </div>-->
+<!--                     </li>-->
 
-                             </ul>
-                         </div>
-                     </li>
+
 
                      <!-- Squad Battles link -->
                      <li><a href="/squad-battles/points" class="waves-effect"><img style="width: 20px;"  src="/design/img/sb_small_19.png"> Squad Battles</a></li>
@@ -373,7 +404,7 @@
                                  <li><a href="/market/Gold" class="waves-effect"><img alt="Market IF"  class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/med/goldrnif.png?v=2"> IndexGold</a></li>
                                  <li><a href="/market/Silver" class="waves-effect"><img alt="Market Silver" class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/med/silverrnif.png?v=2"> IndexSilver</a></li>
                                  <li><a href="/market/Icons" class="waves-effect"><img alt="Market Icons" class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/med/icon.png?v=2"> IndexIcons</a></li>
-                                 <li><a href="/market/PathToGlory" class="waves-effect"><img alt="Market PTG" class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/med/marquee.png?v=2"> IndexPathToGlory</a></li>
+                                 <li><a href="/market/UCL" class="waves-effect"><img alt="Market UCL" class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/med/ucl_rare.png?v=2"> IndexUCL</a></li>
                                  <li><a href="/market/86" class="waves-effect">Index86</a></li>
                                  <li><a href="/market/85" class="waves-effect">Index85</a></li>
                                  <li><a href="/market/84" class="waves-effect">Index84</a></li>
@@ -396,6 +427,10 @@
                                  <li><a href="/squads" class="waves-effect"> All TOTWs</a></li>
 
                                                                           <li class="m-0 p-0" >
+                                             <a class="waves-effect"  style="background: #000000; color: #ffeb7e !important;" data-original-title="31.10.18" data-rel="tooltip" data-placement="right" href="/19/totw/TOTW7">
+                                                 TOTW7                                             </a>
+                                         </li>
+                                                                          <li class="m-0 p-0" >
                                              <a class="waves-effect"  style="background: #000000; color: #ffeb7e !important;" data-original-title="24.10.18" data-rel="tooltip" data-placement="right" href="/19/totw/TOTW6">
                                                  TOTW6                                             </a>
                                          </li>
@@ -410,10 +445,6 @@
                                                                           <li class="m-0 p-0" >
                                              <a class="waves-effect"  style="background: #000000; color: #ffeb7e !important;" data-original-title="10.10.18" data-rel="tooltip" data-placement="right" href="/19/totw/TOTW4">
                                                  TOTW4                                             </a>
-                                         </li>
-                                                                          <li class="m-0 p-0" >
-                                             <a class="waves-effect"  style="background: #000000; color: #ffeb7e !important;" data-original-title="03.10.18" data-rel="tooltip" data-placement="right" href="/19/totw/TOTW3">
-                                                 TOTW3                                             </a>
                                          </li>
                                  
                              </ul>
@@ -614,7 +645,7 @@
                    <li class="nav-item dropdown">
                        <a href="/squad-building-challenges" class="nav-link"  id="navbarDropdownSbc"  data-hover="dropdown" data-delay="0"
                           data-close-others="false" >
-                           <img alt="sbc_logo" class="sbc_nav desk-nav-img" src="https://cdn.futbin.com/design/img/sbc_small_color.png">  SBC
+                           <img alt="sbc_logo" class="sbc_nav desk-nav-img" src="https://cdn.futbin.com/design/img/sbc_small_color.png">
                        </a>
                        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownSbc">
                            <a  class="dropdown-item"  href="/squad-building-challenges"><i class="icon-station2"></i> Active Challenges</a>
@@ -627,6 +658,10 @@
                            <a class="dropdown-item"  href="/stc/analyze"><i class="icon-binoculars2"></i> SBC Club Analyzer</a>
                            
                        </div>
+                   </li>
+
+                   <li class="nav-item">
+                       <a data-placement="bottom" data-toggle="tooltip" data-original-title="Division Rivals"  class="nav-link" href="/division-rivals/division"><img style="width: 20px;" class="desk-nav-img" src="https://cdn.futbin.com/design/img/rivals_small_19.png"> </a>
                    </li>
 
                    <li class="nav-item">
@@ -715,7 +750,7 @@
                            <li><a class="dropdown-item"  href="/market/Gold"><img alt="Market IF"  class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/med/goldrnif.png?v=2"> IndexGold</a></li>
                            <li><a class="dropdown-item"  href="/market/Silver"><img alt="Market Silver" class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/med/silverrnif.png?v=2"> IndexSilver</a></li>
                            <li><a class="dropdown-item"  href="/market/Icons"><img alt="Market Icons" class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/med/icon.png?v=2"> IndexIcons</a></li>
-                           <li><a class="dropdown-item"  href="/market/PathToGlory"><img alt="Market PTG" class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/med/marquee.png?v=2"> IndexPathToGlory</a></li>
+                           <li><a class="dropdown-item"  href="/market/UCL"><img alt="Market UCL" class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/med/ucl_rare.png?v=2"> IndexUCL</a></li>
                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Index 81-86</a>
                                <ul class="dropdown-menu">
                                    <li><a class="dropdown-item" href="/market/86">Index86</a></li>
@@ -773,6 +808,10 @@
                            </li>
 
                                                               <li class="m-0 p-0" style=" text-align: center; ">
+                                       <a class="dropdown-item rounded" style="background: #000000; color: #ffeb7e !important;" data-original-title="31.10.18" data-rel="tooltip" data-placement="right" href="/19/totw/TOTW7">
+                                           TOTW7                                       </a>
+                                   </li>
+                                                                  <li class="m-0 p-0" style=" text-align: center; ">
                                        <a class="dropdown-item rounded" style="background: #000000; color: #ffeb7e !important;" data-original-title="24.10.18" data-rel="tooltip" data-placement="right" href="/19/totw/TOTW6">
                                            TOTW6                                       </a>
                                    </li>
@@ -787,10 +826,6 @@
                                                                   <li class="m-0 p-0" style=" text-align: center; ">
                                        <a class="dropdown-item rounded" style="background: #000000; color: #ffeb7e !important;" data-original-title="10.10.18" data-rel="tooltip" data-placement="right" href="/19/totw/TOTW4">
                                            TOTW4                                       </a>
-                                   </li>
-                                                                  <li class="m-0 p-0" style=" text-align: center; ">
-                                       <a class="dropdown-item rounded" style="background: #000000; color: #ffeb7e !important;" data-original-title="03.10.18" data-rel="tooltip" data-placement="right" href="/19/totw/TOTW3">
-                                           TOTW3                                       </a>
                                    </li>
                                
                        </ul>
@@ -985,8 +1020,8 @@
             <div class="side-bar-tab active" id="latest_watched_tab">Watched Players</div>
 
             
-            <div class="latest-squads-csrf-name hidden" data-value="50d60955f7b31465d6f0cf6c79cd68dec643c7af3ce14d1771087f55c378f1e1f5932a6e5c7b9dbd78b649f78b41e6dfb688b00d518d0c8beafefa706080782a" style="display: none;"></div>
-            <div class="latest-squads-csrf-value hidden" data-value="504176c3d0d49fba7c2dbdc9b4961c4677161fb24b448c2d4c75d7c73363f8c337adda67f5dbd3fe9964975155c40779e31e07b668bdc7967ddfd06b48723e37" style="display: none;"></div>
+            <div class="latest-squads-csrf-name hidden" data-value="081a22bdc459529ab72dbe5fe7de7e8d286e4fbddb8cdd76910413d8979ef1a984c9d5dd88aa8c4759424047fd09ca4db9b92eef06da9919346a0286e8851f25" style="display: none;"></div>
+            <div class="latest-squads-csrf-value hidden" data-value="5a9f2d0db4144eab6521048026503de891ba14791004aceb28a99f53120e4ef84dd15a2a2f39d5aa8ae490307ab9e674716a9d9d6df11d1240ab9f83f88ffedf" style="display: none;"></div>
 
             <div class="side-bar-tab" id="user_latest_squads_tab">My Squads</div>
             <div class="side-bar-tab" id="user_latest_public_squads_tab">Watched Squads</div>
@@ -9753,7 +9788,7 @@
                                     <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">36</span></td>
                                     <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">79</span></td>
                                     <td>188cm | 6'2"</td>
-                                    <td class="mobile-hide-table-col">7</td>
+                                    <td class="mobile-hide-table-col">10</td>
                                     <td>382</td>
                                     <td>1769</td>
                                     
@@ -9791,7 +9826,7 @@
                                     <td><span class="form rating ut19  gold non-rare">75</span></td>
                                     <td class="">CM</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">700 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">400 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -9842,7 +9877,7 @@
                                     <td><span class="form rating ut19  gold non-rare">75</span></td>
                                     <td class="">CM</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">450 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">400 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -9855,7 +9890,7 @@
                                     <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">71</span></td>
                                     <td><span class="badge green  stat_text_green rounded p-2 font-weight-normal">80</span></td>
                                     <td>186cm | 6'1"</td>
-                                    <td class="mobile-hide-table-col">0</td>
+                                    <td class="mobile-hide-table-col">1</td>
                                     <td>431</td>
                                     <td>2067</td>
                                     
@@ -9893,7 +9928,7 @@
                                     <td><span class="form rating ut19  gold non-rare">75</span></td>
                                     <td class="">CM</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">750 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">400 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>4<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -9944,7 +9979,7 @@
                                     <td><span class="form rating ut19  gold non-rare">75</span></td>
                                     <td class="">LWB</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">4K <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">500 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>2<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -9957,7 +9992,7 @@
                                     <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">70</span></td>
                                     <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">78</span></td>
                                     <td>184cm | 6'0"</td>
-                                    <td class="mobile-hide-table-col">4</td>
+                                    <td class="mobile-hide-table-col">5</td>
                                     <td>411</td>
                                     <td>1896</td>
                                     
@@ -9995,7 +10030,7 @@
                                     <td><span class="form rating ut19  gold non-rare">75</span></td>
                                     <td class="">ST</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">500 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">450 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>4<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10046,7 +10081,7 @@
                                     <td><span class="form rating ut19  gold non-rare">75</span></td>
                                     <td class="">ST</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">450 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">500 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10059,7 +10094,7 @@
                                     <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">30</span></td>
                                     <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">66</span></td>
                                     <td>187cm | 6'2"</td>
-                                    <td class="mobile-hide-table-col">1</td>
+                                    <td class="mobile-hide-table-col">2</td>
                                     <td>365</td>
                                     <td>1732</td>
                                     
@@ -10148,7 +10183,7 @@
                                     <td><span class="form rating ut19  gold non-rare">75</span></td>
                                     <td class="">RM</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">800 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">500 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10161,7 +10196,7 @@
                                     <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">50</span></td>
                                     <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">60</span></td>
                                     <td>169cm | 5'7"</td>
-                                    <td class="mobile-hide-table-col">4</td>
+                                    <td class="mobile-hide-table-col">6</td>
                                     <td>394</td>
                                     <td>1887</td>
                                     
@@ -10199,7 +10234,7 @@
                                     <td><span class="form rating ut19  gold non-rare">75</span></td>
                                     <td class="">CAM</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">450 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">400 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>4<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>4<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10250,7 +10285,7 @@
                                     <td><span class="form rating ut19  gold non-rare">75</span></td>
                                     <td class="">CAM</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">500 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">400 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>4<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>4<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10314,7 +10349,7 @@
                                     <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">30</span></td>
                                     <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">78</span></td>
                                     <td>183cm | 6'0"</td>
-                                    <td class="mobile-hide-table-col">-4</td>
+                                    <td class="mobile-hide-table-col">-3</td>
                                     <td>395</td>
                                     <td>1827</td>
                                     
@@ -10352,7 +10387,7 @@
                                     <td><span class="form rating ut19  gold rare">75</span></td>
                                     <td class="">ST</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">750 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">650 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10365,7 +10400,7 @@
                                     <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">33</span></td>
                                     <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">70</span></td>
                                     <td>173cm | 5'8"</td>
-                                    <td class="mobile-hide-table-col">2</td>
+                                    <td class="mobile-hide-table-col">6</td>
                                     <td>402</td>
                                     <td>1946</td>
                                     
@@ -10403,7 +10438,7 @@
                                     <td><span class="form rating ut19  gold rare">75</span></td>
                                     <td class="">LM</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">1K <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">750 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10416,7 +10451,7 @@
                                     <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">46</span></td>
                                     <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">65</span></td>
                                     <td>178cm | 5'10"</td>
-                                    <td class="mobile-hide-table-col">6</td>
+                                    <td class="mobile-hide-table-col">8</td>
                                     <td>418</td>
                                     <td>1960</td>
                                     
@@ -10467,7 +10502,7 @@
                                     <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">69</span></td>
                                     <td><span class="badge green  stat_text_green rounded p-2 font-weight-normal">84</span></td>
                                     <td>178cm | 5'10"</td>
-                                    <td class="mobile-hide-table-col">2</td>
+                                    <td class="mobile-hide-table-col">3</td>
                                     <td>389</td>
                                     <td>1787</td>
                                     
@@ -10505,7 +10540,7 @@
                                     <td><span class="form rating ut19  gold rare">75</span></td>
                                     <td class="">CB</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">800 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">650 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>2<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10607,7 +10642,7 @@
                                     <td><span class="form rating ut19  gold non-rare">75</span></td>
                                     <td class="">CDM</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">650 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">450 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10620,7 +10655,7 @@
                                     <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">73</span></td>
                                     <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">74</span></td>
                                     <td>179cm | 5'10"</td>
-                                    <td class="mobile-hide-table-col">4</td>
+                                    <td class="mobile-hide-table-col">5</td>
                                     <td>412</td>
                                     <td>1949</td>
                                     
@@ -10658,7 +10693,7 @@
                                     <td><span class="form rating ut19  gold non-rare">75</span></td>
                                     <td class="">RM</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">1K <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">450 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>4<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10671,7 +10706,7 @@
                                     <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">26</span></td>
                                     <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">57</span></td>
                                     <td>183cm | 6'0"</td>
-                                    <td class="mobile-hide-table-col">12</td>
+                                    <td class="mobile-hide-table-col">14</td>
                                     <td>384</td>
                                     <td>1824</td>
                                     
@@ -10760,7 +10795,7 @@
                                     <td><span class="form rating ut19  gold non-rare">75</span></td>
                                     <td class="">LM</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">450 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">750 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10811,7 +10846,7 @@
                                     <td><span class="form rating ut19  gold rare">75</span></td>
                                     <td class="">LW</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">700 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">650 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10862,7 +10897,7 @@
                                     <td><span class="form rating ut19  gold non-rare">75</span></td>
                                     <td class="">ST</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">800 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">1.5K <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>4<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10875,7 +10910,7 @@
                                     <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">41</span></td>
                                     <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">76</span></td>
                                     <td>179cm | 5'10"</td>
-                                    <td class="mobile-hide-table-col">2</td>
+                                    <td class="mobile-hide-table-col">3</td>
                                     <td>399</td>
                                     <td>1942</td>
                                     
@@ -10913,7 +10948,7 @@
                                     <td><span class="form rating ut19  gold non-rare">75</span></td>
                                     <td class="">CDM</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">450 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">500 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>2<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10964,7 +10999,7 @@
                                     <td><span class="form rating ut19  gold non-rare">75</span></td>
                                     <td class="">CDM</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">500 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">850 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10977,7 +11012,7 @@
                                     <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">70</span></td>
                                     <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">78</span></td>
                                     <td>170cm | 5'7"</td>
-                                    <td class="mobile-hide-table-col">2</td>
+                                    <td class="mobile-hide-table-col">3</td>
                                     <td>419</td>
                                     <td>2032</td>
                                     
@@ -11015,7 +11050,7 @@
                                     <td><span class="form rating ut19  gold non-rare">75</span></td>
                                     <td class="">CB</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">1.4K <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">1K <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>2<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>4<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -11028,7 +11063,7 @@
                                     <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">74</span></td>
                                     <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">78</span></td>
                                     <td>184cm | 6'0"</td>
-                                    <td class="mobile-hide-table-col">0</td>
+                                    <td class="mobile-hide-table-col">1</td>
                                     <td>367</td>
                                     <td>1653</td>
                                     
@@ -11117,7 +11152,7 @@
                                     <td><span class="form rating ut19  gold non-rare">75</span></td>
                                     <td class="">ST</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">800 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">1.5K <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>2<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -11130,7 +11165,7 @@
                                     <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">36</span></td>
                                     <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">69</span></td>
                                     <td>177cm | 5'10"</td>
-                                    <td class="mobile-hide-table-col">6</td>
+                                    <td class="mobile-hide-table-col">7</td>
                                     <td>394</td>
                                     <td>1843</td>
                                     
@@ -11168,7 +11203,7 @@
                                     <td><span class="form rating ut19  gold non-rare">75</span></td>
                                     <td class="">CAM</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">450 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">400 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>4<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -11181,7 +11216,7 @@
                                     <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">44</span></td>
                                     <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">61</span></td>
                                     <td>173cm | 5'8"</td>
-                                    <td class="mobile-hide-table-col">-2</td>
+                                    <td class="mobile-hide-table-col">-4</td>
                                     <td>395</td>
                                     <td>1897</td>
                                     
@@ -11219,7 +11254,7 @@
                                     <td><span class="form rating ut19  gold non-rare">75</span></td>
                                     <td class="">CM</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">450 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">400 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>4<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -11277,9 +11312,9 @@
                         </li><li class="page-item ">
                             <a href="/19/players?page=60&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=all_nif" class="page-link ">60</a>
                         </li>...<li class="page-item ">
-                            <a href="/19/players?page=465&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=all_nif" class="page-link ">465</a>
-                        </li><li class="page-item ">
                             <a href="/19/players?page=466&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=all_nif" class="page-link ">466</a>
+                        </li><li class="page-item ">
+                            <a href="/19/players?page=467&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=all_nif" class="page-link ">467</a>
                         </li><li class="page-item">
                             <a href="/19/players?page=58&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=all_nif" class="page-link " aria-label="Next">
                                 <span aria-hidden="true">&raquo;</span>
@@ -11398,6 +11433,10 @@
                 <h6 class="text-uppercase font-weight-bold">Latest Squads</h6>
                 <hr class="primary-color accent-2 mb-2 mt-0 d-inline-block mx-auto" style="width: 60px;">
                                     <p>
+                            <a data-original-title="31.10.18" data-rel="tooltip" data-placement="right" href="/totw/TOTW7">
+                                TOTW7                            </a>
+                        </p>
+                                            <p>
                             <a data-original-title="24.10.18" data-rel="tooltip" data-placement="right" href="/totw/TOTW6">
                                 TOTW6                            </a>
                         </p>
@@ -11412,10 +11451,6 @@
                                             <p>
                             <a data-original-title="10.10.18" data-rel="tooltip" data-placement="right" href="/totw/TOTW4">
                                 TOTW4                            </a>
-                        </p>
-                                            <p>
-                            <a data-original-title="03.10.18" data-rel="tooltip" data-placement="right" href="/totw/TOTW3">
-                                TOTW3                            </a>
                         </p>
                     
             </div>
