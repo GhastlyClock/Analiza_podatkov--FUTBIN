@@ -25,7 +25,7 @@ vzorec_igralca = re.compile(
         r'<td><span class="badge .*? p-2 font-weight-normal">(?P<obramba>\d+)</span></td>.*?'
         r'<td><span class="badge .*? p-2 font-weight-normal">(?P<fizika>\d+)</span></td>.*?'
         r'<td>(?P<višina>\d+)cm.*?'
-        r'<td class="mobile-hide-table-col">(?P<popularnost>.*?)</td>',
+        r'<td>(?P<popularnost>.*?)</td>',
         re.DOTALL
     )
 imena_polj = [
@@ -91,9 +91,17 @@ def izloci_klub(igralci):
 
 
 igralci = []
-for i in range(1, 101):
-    for igralec in obdelava_spletne_strani(i):
-        igralci.append(igralec)
+# Ker sem odstranil igralce s ceno 0 (z razlago glej nižje) sem moral spremeniti loop, da dosežem kvoto 3000 igralcev
+stevec = 1
+st_strani = 1
+while stevec <= 3000:
+    for igralec in obdelava_spletne_strani(st_strani):
+        # Zaradi lažje obdelave podatkov odstranim vse igralce s ceno 0
+        # OPOMBA: igralci s ceno 0 v igri ne obstajajo, na spletni strani so objavljeni le zato, ker so pred izidom igre menjali klub!
+        if igralec['cena'] != 0 and stevec <= 3000:
+            igralci.append(igralec)
+            stevec += 1
+    st_strani += 1
 igralci.sort(key=lambda igralec: igralec['id'])
 orodja.zapisi_json(igralci, 'igralci.json')
 # Zaradi preglednost CSV datoteke odstranim nekatere stolpce, ki so razvidni z id_lige

@@ -52,6 +52,7 @@ id_lige,liga,id_kluba,klub
 14,EFL Championship,12,Middlesbrough
 14,EFL Championship,14,Nottingham Forest
 14,EFL Championship,15,Queens Park Rangers
+14,EFL Championship,88,Birmingham City
 14,EFL Championship,91,Derby County
 14,EFL Championship,97,Millwall
 14,EFL Championship,109,West Bromwich Albion
@@ -242,7 +243,6 @@ id_lige,liga,id_kluba,klub
 80,Österreichische Fußball-Bundesliga,254,SK Rapid Wien
 80,Österreichische Fußball-Bundesliga,256,FK Austria Wien
 83,K LEAGUE Classic,1473,Ulsan Hyundai Horang-i
-189,Raiffeisen Super League,322,Grasshopper Club Zürich
 189,Raiffeisen Super League,896,FC Basel
 189,Raiffeisen Super League,900,BSC Young Boys
 189,Raiffeisen Super League,110770,FC Sion
