@@ -7,7 +7,7 @@
 <head>
 
     <!-- Basic -->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
     <meta name="description" content="Explore and filter FIFA 19 Ultimate Team Players">
     <meta name="author" content="FUTBIN">
     <meta name="apple-itunes-app" content="app-id=1080465358">
@@ -28,7 +28,7 @@
 
 
     <link rel="stylesheet" href="https://cdn.futbin.com/design/css/main.css?v=190918175217"/>
-    <link rel="stylesheet" href="https://cdn.futbin.com/design/css/mdb.css?v=011118090054"/>
+    <link rel="stylesheet" href="https://cdn.futbin.com/design/css/mdb.css?v=131218110459"/>
 <!--    --><!--        <link rel="stylesheet" href="--><!--/design/css/mdb.css?v=--><!--"/>-->
 <!--    --><!--        <link rel="stylesheet" href="--><!--/design/css/mdb.min.css?v=--><!--"/>-->
 <!--    -->
@@ -69,7 +69,7 @@
     <link rel="stylesheet"  href="https://cdn.futbin.com/design/css/hover-min.css?v=190918175218" />
 <link rel="stylesheet"  href="https://cdn.futbin.com/design/plugins/icheck-1.x/skins/all.css?v=190918175213" />
 <link rel="stylesheet"  href="https://cdn.futbin.com/design/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-shadow.min.css?v=190918175216" />
-<link rel="stylesheet"  href="https://cdn.futbin.com/design/css/pages/players.min.css?v=200717222617" />
+
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -106,7 +106,7 @@
 
 
 
-    <meta name='general_csrf-name' content='151e1391e7746f918f174dd9e614f4de62e0f607668eaa3d50167e736a327de70c0110bc3768166c46e67cbfcdbd636c36daaac16c524dd14c1072a4688356f2'><meta name='general_csrf-value' content='bfcf55ee53e8685279be50c704bf2f367590495a5927032654c28491d8d1a075a6ac43f9c4092cbaba0fac64b9fc51592eb58b86ee6e7e3e5167eac36a2a2c10'>    
+    <meta name='general_csrf-name' content='24bd869eeb934569968f495e0cc71622abd77401a571d5bc5cd48cd9a3750cb5b07a8c7ed0bd66e0b62f106717507d1dddd6f4d4b11352ea5545ea6a202c25cf'><meta name='general_csrf-value' content='87a57131c50671328d443bf5d5c1ffa6b7d84ef8f293879882df5ea56ebe506d7f63d8ffb1d74049fbdf3fc529bb1de179130100e1e892c25f2c8c59dd6c3cea'>    
 
 
             <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
@@ -401,10 +401,11 @@
                                  <li><a href="/market" class="waves-effect"><i class="icon-chart" ></i>  Index100</a></li>
                                  <li><a href="/market/Special" class="waves-effect"> <img alt="Market Gold" class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/tiny/goldinform.png?v=2"> IndexSpecial</a></li>
                                  <li><a href="/market/OnesToWatch" class="waves-effect"><img alt="Market OTW" class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/tiny/otw.png?v=2"> IndexOnesToWatch</a></li>
-                                 <li><a href="/market/Gold" class="waves-effect"><img alt="Market IF"  class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/med/goldrnif.png?v=2"> IndexGold</a></li>
-                                 <li><a href="/market/Silver" class="waves-effect"><img alt="Market Silver" class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/med/silverrnif.png?v=2"> IndexSilver</a></li>
-                                 <li><a href="/market/Icons" class="waves-effect"><img alt="Market Icons" class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/med/icon.png?v=2"> IndexIcons</a></li>
-                                 <li><a href="/market/UCL" class="waves-effect"><img alt="Market UCL" class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/med/ucl_rare.png?v=2"> IndexUCL</a></li>
+                                 <li><a href="/market/Gold" class="waves-effect"><img alt="Market IF"  class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/tiny/goldrnif.png?v=2"> IndexGold</a></li>
+                                 <li><a href="/market/Silver" class="waves-effect"><img alt="Market Silver" class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/tiny/silverrnif.png?v=2"> IndexSilver</a></li>
+                                 <li><a href="/market/Icons" class="waves-effect"><img alt="Market Icons" class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/tiny/icon.png?v=2"> IndexIcons</a></li>
+                                 <li><a href="/market/UCL" class="waves-effect"><img alt="Market UCL" class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/tiny/ucl_rare.png?v=2"> IndexUCL</a></li>
+                                 <li><a href="/market/UCLLive" class="waves-effect"><img alt="Market Live UCL" class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/tiny/ucl_live.png?v=2"> IndexLiveUCL</a></li>
                                  <li><a href="/market/86" class="waves-effect">Index86</a></li>
                                  <li><a href="/market/85" class="waves-effect">Index85</a></li>
                                  <li><a href="/market/84" class="waves-effect">Index84</a></li>
@@ -420,31 +421,35 @@
                      <li><a class="collapsible-header waves-effect arrow-r"> <i class="icon-collaboration desk-nav-img"></i> Squads <i class="fa fa-angle-down rotate-icon"></i></a>
                          <div class="collapsible-body">
                              <ul>
+                                 <li class="m-0 p-0">
+                                     <a class="dropdown-item rounded waves-effect waves-light" style="background: #001253; color: #00f7dc !important;"   href="/rttf">
+                                         RTTF                                       </a>
+                                 </li>
+
                                  <li><a href="/community/squads/builder" class="waves-effect">    FUT 19 Community Squads </a></li>
                                  <li><a href="/community/squads/draft" class="waves-effect">   FUT 19 Community Drafts </a></li>
-                                 <li><a href="/path-to-glory" class="waves-effect"> <img alt="Market Gold" class="market-nav-card" src="/content/fifa18/img/cards/tiny/ptgs.png?v=2"> Path To Glory</a></li>
-                                 <li><a href="/tots" class="waves-effect"> <img alt="Market Gold" class="market-nav-card" src="/content/fifa18/img/cards/tiny/totsg.png?v=2"> TOTS</a></li>
+<!--                                 <li><a href="/tots" class="waves-effect"> <img alt="Market Gold" class="market-nav-card" src="/content/fifa19/img/cards/tiny/totsg.png?v=2"> TOTS</a></li>-->
                                  <li><a href="/squads" class="waves-effect"> All TOTWs</a></li>
 
                                                                           <li class="m-0 p-0" >
-                                             <a class="waves-effect"  style="background: #000000; color: #ffeb7e !important;" data-original-title="31.10.18" data-rel="tooltip" data-placement="right" href="/19/totw/TOTW7">
-                                                 TOTW7                                             </a>
+                                             <a class="waves-effect"  style="background: #000000; color: #ffeb7e !important;" data-original-title="26.12.18" data-rel="tooltip" data-placement="right" href="/19/totw/TOTW15">
+                                                 TOTW15                                             </a>
                                          </li>
                                                                           <li class="m-0 p-0" >
-                                             <a class="waves-effect"  style="background: #000000; color: #ffeb7e !important;" data-original-title="24.10.18" data-rel="tooltip" data-placement="right" href="/19/totw/TOTW6">
-                                                 TOTW6                                             </a>
+                                             <a class="waves-effect"  style="background: #022c80; color: #58dccf !important;" data-original-title="21.12.18" data-rel="tooltip" data-placement="right" href="/19/totw/UCLLIVE2">
+                                                 UCLLIVE2                                             </a>
                                          </li>
                                                                           <li class="m-0 p-0" >
-                                             <a class="waves-effect"  style="background: #3d2028; color: #dbab81 !important;" data-original-title="19.10.18" data-rel="tooltip" data-placement="right" href="/19/totw/UltimateScream">
-                                                 UltimateScream                                             </a>
+                                             <a class="waves-effect"  style="background: #000000; color: #ffeb7e !important;" data-original-title="19.12.18" data-rel="tooltip" data-placement="right" href="/19/totw/TOTW14">
+                                                 TOTW14                                             </a>
                                          </li>
                                                                           <li class="m-0 p-0" >
-                                             <a class="waves-effect"  style="background: #000000; color: #ffeb7e !important;" data-original-title="17.10.18" data-rel="tooltip" data-placement="right" href="/19/totw/TOTW5">
-                                                 TOTW5                                             </a>
+                                             <a class="waves-effect"  style="background: #000000; color: #ffeb7e !important;" data-original-title="12.12.18" data-rel="tooltip" data-placement="right" href="/19/totw/TOTW13">
+                                                 TOTW13                                             </a>
                                          </li>
                                                                           <li class="m-0 p-0" >
-                                             <a class="waves-effect"  style="background: #000000; color: #ffeb7e !important;" data-original-title="10.10.18" data-rel="tooltip" data-placement="right" href="/19/totw/TOTW4">
-                                                 TOTW4                                             </a>
+                                             <a class="waves-effect"  style="background: #071237; color: #db00ff !important;" data-original-title="07.12.18" data-rel="tooltip" data-placement="right" href="/19/totw/TOTGS">
+                                                 TOTGS                                             </a>
                                          </li>
                                  
                              </ul>
@@ -458,6 +463,7 @@
                          <div class="collapsible-body">
                              <ul>
                                  <li><a href="/user/club" class="waves-effect"><i class="icon-tshirt"></i> Import</a></li>
+                                 <li><a href="/squad-calculator" class="waves-effect"><i class="icon-calculator4 text-pink" ></i> Squad Calculator </a></li>
                                  <li><a href="/stats-calculator" class="waves-effect"><i class="icon-calculator2" ></i> Stats Calculator </a></li>
                                  <li><a href="/calculator" class="waves-effect"><i class="icon-calculator3" ></i> FUT Calculator</a></li>
                                  <li><a href="/fut-card-creator" class="waves-effect"><i class="icon-screwdriver2"></i> FUT Card Creator</a></li>
@@ -747,10 +753,11 @@
                                    <img alt="Market OTW" class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/tiny/otw.png?v=2"> IndexOnesToWatch
                                </a>
                            </li>
-                           <li><a class="dropdown-item"  href="/market/Gold"><img alt="Market IF"  class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/med/goldrnif.png?v=2"> IndexGold</a></li>
-                           <li><a class="dropdown-item"  href="/market/Silver"><img alt="Market Silver" class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/med/silverrnif.png?v=2"> IndexSilver</a></li>
-                           <li><a class="dropdown-item"  href="/market/Icons"><img alt="Market Icons" class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/med/icon.png?v=2"> IndexIcons</a></li>
-                           <li><a class="dropdown-item"  href="/market/UCL"><img alt="Market UCL" class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/med/ucl_rare.png?v=2"> IndexUCL</a></li>
+                           <li><a class="dropdown-item"  href="/market/Gold"><img alt="Market IF"  class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/tiny/goldrnif.png?v=2"> IndexGold</a></li>
+                           <li><a class="dropdown-item"  href="/market/Silver"><img alt="Market Silver" class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/tiny/silverrnif.png?v=2"> IndexSilver</a></li>
+                           <li><a class="dropdown-item"  href="/market/Icons"><img alt="Market Icons" class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/tiny/icon.png?v=2"> IndexIcons</a></li>
+                           <li><a class="dropdown-item"  href="/market/UCL"><img alt="Market UCL" class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/tiny/ucl_rare.png?v=2"> IndexUCL</a></li>
+                           <li><a class="dropdown-item"  href="/market/UCLLive"><img alt="Market UCL Live" class="market-nav-card" src="https://cdn.futbin.com/content/fifa19/img/cards/tiny/ucl_live.png?v=2"> IndexLiveUCL</a></li>
                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Index 81-86</a>
                                <ul class="dropdown-menu">
                                    <li><a class="dropdown-item" href="/market/86">Index86</a></li>
@@ -785,22 +792,23 @@
                        <a class="nav-link " href="/squads" id="navbarDropdownMarketLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                            <i class="icon-collaboration desk-nav-img"></i> Squads                       </a>
                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMarketLink">
+                           <li class="m-0 p-0" style=" text-align: center; ">
+                               <a class="dropdown-item rounded waves-effect waves-light" style="background: #001253; color: #00f7dc !important;"   href="/rttf">
+                                   RTTF
+                               </a>
+                           </li>
+
                            <li><a class="dropdown-item" href="/community/squads/builder" >
                                    FUT 19 Community Squads                               </a></li>
                            <li>
                                <a class="dropdown-item" href="/community/squads/draft" >
                                    FUT 19 Community Drafts                               </a>
                            </li>
-                           <li>
-                               <a class="dropdown-item" href="/path-to-glory" >
-                                   <img alt="Market Gold" class="market-nav-card" src="/content/fifa18/img/cards/tiny/ptgs.png?v=2"> Path To Glory
-                               </a>
-                           </li>
-                           <li>
-                               <a class="dropdown-item" href="/tots" >
-                                   <img alt="Market Gold" class="market-nav-card" src="/content/fifa18/img/cards/tiny/totsg.png?v=2"> TOTS
-                               </a>
-                           </li>
+<!--                           <li>-->
+<!--                               <a class="dropdown-item" href="/tots" >-->
+<!--                                   <img alt="Market Gold" class="market-nav-card" src="/content/fifa18/img/cards/tiny/totsg.png?v=2"> TOTS-->
+<!--                               </a>-->
+<!--                           </li>-->
                            <li>
                                <a class="dropdown-item" href="/squads" >
                                    All TOTWs
@@ -808,24 +816,24 @@
                            </li>
 
                                                               <li class="m-0 p-0" style=" text-align: center; ">
-                                       <a class="dropdown-item rounded" style="background: #000000; color: #ffeb7e !important;" data-original-title="31.10.18" data-rel="tooltip" data-placement="right" href="/19/totw/TOTW7">
-                                           TOTW7                                       </a>
+                                       <a class="dropdown-item rounded" style="background: #000000; color: #ffeb7e !important;" data-original-title="26.12.18" data-rel="tooltip" data-placement="right" href="/19/totw/TOTW15">
+                                           TOTW15                                       </a>
                                    </li>
                                                                   <li class="m-0 p-0" style=" text-align: center; ">
-                                       <a class="dropdown-item rounded" style="background: #000000; color: #ffeb7e !important;" data-original-title="24.10.18" data-rel="tooltip" data-placement="right" href="/19/totw/TOTW6">
-                                           TOTW6                                       </a>
+                                       <a class="dropdown-item rounded" style="background: #022c80; color: #58dccf !important;" data-original-title="21.12.18" data-rel="tooltip" data-placement="right" href="/19/totw/UCLLIVE2">
+                                           UCLLIVE2                                       </a>
                                    </li>
                                                                   <li class="m-0 p-0" style=" text-align: center; ">
-                                       <a class="dropdown-item rounded" style="background: #3d2028; color: #dbab81 !important;" data-original-title="19.10.18" data-rel="tooltip" data-placement="right" href="/19/totw/UltimateScream">
-                                           UltimateScream                                       </a>
+                                       <a class="dropdown-item rounded" style="background: #000000; color: #ffeb7e !important;" data-original-title="19.12.18" data-rel="tooltip" data-placement="right" href="/19/totw/TOTW14">
+                                           TOTW14                                       </a>
                                    </li>
                                                                   <li class="m-0 p-0" style=" text-align: center; ">
-                                       <a class="dropdown-item rounded" style="background: #000000; color: #ffeb7e !important;" data-original-title="17.10.18" data-rel="tooltip" data-placement="right" href="/19/totw/TOTW5">
-                                           TOTW5                                       </a>
+                                       <a class="dropdown-item rounded" style="background: #000000; color: #ffeb7e !important;" data-original-title="12.12.18" data-rel="tooltip" data-placement="right" href="/19/totw/TOTW13">
+                                           TOTW13                                       </a>
                                    </li>
                                                                   <li class="m-0 p-0" style=" text-align: center; ">
-                                       <a class="dropdown-item rounded" style="background: #000000; color: #ffeb7e !important;" data-original-title="10.10.18" data-rel="tooltip" data-placement="right" href="/19/totw/TOTW4">
-                                           TOTW4                                       </a>
+                                       <a class="dropdown-item rounded" style="background: #071237; color: #db00ff !important;" data-original-title="07.12.18" data-rel="tooltip" data-placement="right" href="/19/totw/TOTGS">
+                                           TOTGS                                       </a>
                                    </li>
                                
                        </ul>
@@ -861,6 +869,7 @@
 
                        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuTools">
                            <a class="dropdown-item" href="/user/club"><i class="icon-tshirt"></i> Import</a>
+                           <a class="dropdown-item" style="color: #de0063 !important; font-weight: 500;" href="/squad-calculator"><i class="icon-calculator4" ></i> Squad Calculator</a>
                            <a class="dropdown-item" href="/stats-calculator"><i class="icon-calculator2" ></i> Stats Calculator</a>
                            <a class="dropdown-item" href="/calculator"><i class="icon-calculator3" ></i> FUT Calculator</a>
                            <a class="dropdown-item" href="/fut-card-creator"><i class="icon-screwdriver2"></i> FUT Card Creator</a>
@@ -1020,8 +1029,8 @@
             <div class="side-bar-tab active" id="latest_watched_tab">Watched Players</div>
 
             
-            <div class="latest-squads-csrf-name hidden" data-value="1b70d341de97c5a5f88965443b7d80bb37efe39ca99ae22693eff37a0497ce7eb91321daf9b715ca48a942eb8f9258649de606a2e9c764c4b16d6cc436439ca5" style="display: none;"></div>
-            <div class="latest-squads-csrf-value hidden" data-value="9108b47593863cc7f85f8715e4738b9cb6cfda1482f470e2acddbd60df978aefc3b0fb62b6629bd474c1d6ff077b385902278e257ee588628eadd029252dc5eb" style="display: none;"></div>
+            <div class="latest-squads-csrf-name hidden" data-value="ed65cd8c2335a68a30eae50044efb69052edc4614638f482b1d95adc2c1ab3dce6a35931c5f49d23ba2568d80d9a3baeff13f8fe74363204c466619740725398" style="display: none;"></div>
+            <div class="latest-squads-csrf-value hidden" data-value="d5ddf0c30ce1e624fd187b362746ead21367e8113210a13eea372ed71885c3efacc8932deb4f0e630593067c8c385926a2f5b29069d4a3833494ed6cf4e48f9e" style="display: none;"></div>
 
             <div class="side-bar-tab" id="user_latest_squads_tab">My Squads</div>
             <div class="side-bar-tab" id="user_latest_public_squads_tab">Watched Squads</div>
@@ -1117,7 +1126,34 @@
                                 <li><a  href="/19/players?page=1&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=all_nif&version_type=transfers"> <i class="icon-transmission"></i> Transfers</a></li>
                 <li><a href="/19/players?page=1&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=all_nif&version_type=upgrades"><i class="icon-stack-up"></i>  Upgrades</a></li>
 
-                                                                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#"><img class="single_dd" data-original="https://cdn.futbin.com/content/fifa19/img/cards/ucl_rare.png" style="height: 15px; width: 12px; margin-top: -1.5%;"> UCL</a>
+                                                                                    <li>
+                                <a  class="dropdown-item" rel="nofollow" href="/19/players?page=1&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=futmas">
+                                    <img class="single_dd" data-original="https://cdn.futbin.com/content/fifa19/img/cards/futmas.png" style="height: 15px; width: 12px; margin-top: -1.5%;" />  FUTMAS                                </a>
+                            </li>
+                                                                                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#"><img class="single_dd" data-original="https://cdn.futbin.com/content/fifa19/img/cards/icon.png" style="height: 15px; width: 12px; margin-top: -1.5%;"> icons</a>
+                    <ul class="dropdown-menu">
+                                                        <li>
+                                    <a  class="dropdown-item" rel="nofollow" href=" /19/players?page=1&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=icons">
+                                        All                                    </a>
+                                </li>
+                                                            <li>
+                                    <a  class="dropdown-item" rel="nofollow" href=" /19/players?page=1&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=base_icons">
+                                        Base                                    </a>
+                                </li>
+                                                            <li>
+                                    <a  class="dropdown-item" rel="nofollow" href=" /19/players?page=1&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=mid_icons">
+                                        Middle                                    </a>
+                                </li>
+                                                            <li>
+                                    <a  class="dropdown-item" rel="nofollow" href=" /19/players?page=1&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=prime_icons">
+                                        Prime                                    </a>
+                                </li>
+                            
+
+
+                    </ul>
+                </li>
+                                                                                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#"><img class="single_dd" data-original="https://cdn.futbin.com/content/fifa19/img/cards/ucl_rare.png" style="height: 15px; width: 12px; margin-top: -1.5%;"> UCL</a>
                     <ul class="dropdown-menu">
                                                         <li>
                                     <a  class="dropdown-item" rel="nofollow" href=" /19/players?page=1&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=ucl_rare">
@@ -1226,12 +1262,12 @@
                                     <img class="single_dd" data-original="https://cdn.futbin.com/content/fifa19/img/cards/bronzeinform.png" style="height: 15px; width: 12px; margin-top: -1.5%;" />  Bronze IF                                </a>
                             </li>
                                                                                                     <li>
-                                <a  class="dropdown-item" rel="nofollow" href="/19/players?page=1&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=icons">
-                                    <img class="single_dd" data-original="https://cdn.futbin.com/content/fifa19/img/cards/icon.png" style="height: 15px; width: 12px; margin-top: -1.5%;" />  Icons                                </a>
-                            </li>
-                                                                                                    <li>
                                 <a  class="dropdown-item" rel="nofollow" href="/19/players?page=1&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=otw">
                                     <img class="single_dd" data-original="https://cdn.futbin.com/content/fifa19/img/cards/otw.png" style="height: 15px; width: 12px; margin-top: -1.5%;" />  Ones To Watch                                </a>
+                            </li>
+                                                                                                    <li>
+                                <a  class="dropdown-item" rel="nofollow" href="/19/players?page=1&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=halloween">
+                                    <img class="single_dd" data-original="https://cdn.futbin.com/content/fifa19/img/cards/halloween.png" style="height: 15px; width: 12px; margin-top: -1.5%;" />  Scream Team                                </a>
                             </li>
                                                                                                     <li>
                                 <a  class="dropdown-item" rel="nofollow" href="/19/players?page=1&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=sbc">
@@ -1263,7 +1299,7 @@
                             </li>
                                                 
                                 <li class="dropdown-submenu">
-                    <a tabindex="-1"  rel="nofollow" href="#">
+                    <a tabindex="-1"  rel="nofollow" class="dropdown-item dropdown-toggle" href="javascript:void(0)">
                          <i class="icon-stack4"></i> Revision
                     </a>
                     <ul class="dropdown-menu">
@@ -2387,7 +2423,7 @@
                         </span>
 
                 <li class="dropdown dropdown-submenu country_sub">
-                    <a  rel="nofollow" href="#" style="font-weight: bold;">
+                    <a  rel="nofollow" href="javascript:void(0)" style="font-weight: bold;">
                         Top 5
 
                     </a>
@@ -2427,7 +2463,7 @@
 
                 </li>
                                                     <li class="dropdown dropdown-submenu leagues_sub">
-                        <a  rel="nofollow" href="#">
+                        <a  rel="nofollow" href="javascript:void(0)">
                             Others
                         </a>
                         <ul class="dropdown-menu">
@@ -2440,7 +2476,7 @@
 
                     </li>
                                     <li class="dropdown dropdown-submenu leagues_sub">
-                        <a  rel="nofollow" href="#">
+                        <a  rel="nofollow" href="javascript:void(0)">
                             A,C
                         </a>
                         <ul class="dropdown-menu">
@@ -2481,7 +2517,7 @@
 
                     </li>
                                     <li class="dropdown dropdown-submenu leagues_sub">
-                        <a  rel="nofollow" href="#">
+                        <a  rel="nofollow" href="javascript:void(0)">
                             D,K
                         </a>
                         <ul class="dropdown-menu">
@@ -2538,7 +2574,7 @@
 
                     </li>
                                     <li class="dropdown dropdown-submenu leagues_sub">
-                        <a  rel="nofollow" href="#">
+                        <a  rel="nofollow" href="javascript:void(0)">
                             L,P
                         </a>
                         <ul class="dropdown-menu">
@@ -2595,7 +2631,7 @@
 
                     </li>
                                     <li class="dropdown dropdown-submenu leagues_sub">
-                        <a  rel="nofollow" href="#">
+                        <a  rel="nofollow" href="javascript:void(0)">
                             Q,Z
                         </a>
                         <ul class="dropdown-menu">
@@ -2658,7 +2694,7 @@
 
                         </span>
                                     <li class="dropdown dropdown-submenu">
-                        <a  rel="nofollow" href="#">
+                        <a  rel="nofollow" href="javascript:void(0)">
                             Others
                         </a>
                         <ul class="dropdown-menu">
@@ -2821,7 +2857,7 @@
 
                     </li>
                                     <li class="dropdown dropdown-submenu">
-                        <a  rel="nofollow" href="#">
+                        <a  rel="nofollow" href="javascript:void(0)">
                             A,C
                         </a>
                         <ul class="dropdown-menu">
@@ -3803,7 +3839,7 @@
 
                     </li>
                                     <li class="dropdown dropdown-submenu">
-                        <a  rel="nofollow" href="#">
+                        <a  rel="nofollow" href="javascript:void(0)">
                             D,K
                         </a>
                         <ul class="dropdown-menu">
@@ -5181,7 +5217,7 @@
 
                     </li>
                                     <li class="dropdown dropdown-submenu">
-                        <a  rel="nofollow" href="#">
+                        <a  rel="nofollow" href="javascript:void(0)">
                             L,P
                         </a>
                         <ul class="dropdown-menu">
@@ -6734,7 +6770,7 @@
 
                     </li>
                                     <li class="dropdown dropdown-submenu">
-                        <a  rel="nofollow" href="#">
+                        <a  rel="nofollow" href="javascript:void(0)">
                             Q,Z
                         </a>
                         <ul class="dropdown-menu">
@@ -7807,7 +7843,7 @@
             <a  rel="nofollow" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="icon-star-full stars stars_filter"></i> <span style="margin-top: 20px;" class="caret"></span></a>
             <ul class="dropdown-menu dropdown-menu2 general_dd" style="width: 200px;">
                 <li class="dropdown dropdown-submenu">
-                    <a  rel="nofollow" href="#" style="font-weight: bold;">
+                    <a  rel="nofollow" href="javascript:void(0)" style="font-weight: bold;">
                         Min Skills
                     </a>
                     <ul class="dropdown-menu">
@@ -9738,7 +9774,7 @@
                         <th><a data-placement="top" data-toggle="tooltip" data-original-title="Order By Defending" href="/19/players?page=88&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=all_nif&sort=Player_Defending&order=desc">DEF</a></th>
                         <th><a data-placement="top" data-toggle="tooltip" data-original-title="Order By Physicality" href="/19/players?page=88&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=all_nif&sort=Player_Heading&order=desc">PHY</a></th>
                         <th><a data-placement="top" data-toggle="tooltip" data-original-title="Order By Height" href="/19/players?page=88&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=all_nif&sort=Player_Height&order=desc"><i class="icon-height"></i></a></th>
-                        <th class="mobile-hide-table-col"><a data-placement="top" data-toggle="tooltip" data-original-title="Order By Popularity" href="/19/players?page=88&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=all_nif&sort=likes&order=desc"><i class="icon-fire"></i></a></th>
+                        <th><a data-placement="top" data-toggle="tooltip" data-original-title="Order By Popularity" href="/19/players?page=88&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=all_nif&sort=likes&order=desc"><i class="icon-fire"></i></a></th>
                         <th><a data-placement="top" data-toggle="tooltip" data-original-title="Order By Base Stats" href="/19/players?page=88&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=all_nif&sort=TotalStats&order=desc">BS</a></th>
                         <th><a data-placement="top" data-toggle="tooltip" data-original-title="Order By In Game Stats" href="/19/players?page=88&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=all_nif&sort=TotalIGS&order=desc">IGS</a></th>
                                                                                                 
@@ -9746,11 +9782,113 @@
                                                 </thead>
 
                         <tbody>
-                                                        <tr class="player_tr_1" data-url="/19/player/5658/Valeri Qazaishvili">
+                                                        <tr class="player_tr_1" data-url="/19/player/5644/Andrés Felipe Roa">
                                     <td class="table-row-text row" style="text-align: left;">
 
                                        <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/205401.png?v=9" >
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/221310.png?v=10" >
+                                           </div>
+                                    
+                                   <div class="d-inline pt-2 pl-3">
+
+                                       <div>
+                                           <a href="/19/player/5644/Andrés Felipe Roa" class="player_name_players_table">Andrés Felipe Roa</a>
+                                       </div>
+
+                                       <div>
+                                              <span class="players_club_nation" style="display: inline-block;">
+                                                <a href="/19/players?page=1&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=all_nif&club=111711" data-original-title="Club Atlético Huracán" data-toggle="tooltip" data-placement="top"><img style="width:20px;" src="https://cdn.futbin.com/content/fifa19/img/clubs/111711.png"></a>
+                                                <a href="/19/players?page=1&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=all_nif&nation=56" data-original-title="Colombia" data-toggle="tooltip" data-placement="top"><img style="width: 24px;" src="https://cdn.futbin.com/content/fifa19/img/nation/56.png"></a>
+                                                    <a href="/19/players?page=1&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=all_nif&league=353" data-original-title="SAF" data-toggle="tooltip" data-placement="top"><img style="width: 24px;" src="https://cdn.futbin.com/content/fifa19/img/league/353.png"></a>
+                                               </span>
+                                       </div>
+
+
+                                   </div>
+
+
+                                    </td>
+                                    <td><span class="form rating ut19  silver rare">73</span></td>
+                                    <td class="">CAM</td>
+                                    <td class="mobile-hide-table-col">Normal</td>
+                                                                          <td><span class="ps4_color font-weight-bold">500 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                                                                                                  
+                                                                                                                                                                                        <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
+                                    <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
+                                    <td><span style="font-weight: bold;" class="med_wr_text">M</span> \ <span style="font-weight: bold;" class="med_wr_text">M</span></td>
+                                    <td><span class="badge green  stat_text_green rounded p-2 font-weight-normal">80</span></td>
+
+                                    <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">60</span></td>
+                                    <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">72</span></td>
+                                    <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">76</span></td>
+                                    <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">49</span></td>
+                                    <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">60</span></td>
+                                    <td>175cm | 5'9"</td>
+                                    <td>3</td>
+                                    <td>397</td>
+                                    <td>1859</td>
+                                    
+                                                                        
+                                    
+                                    
+                                                                    </tr>
+
+                                                            <tr class="player_tr_2" data-url="/19/player/5645/Omar Alderete">
+                                    <td class="table-row-text row" style="text-align: left;">
+
+                                       <div class="d-inline">
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/240359.png?v=10" >
+                                           </div>
+                                    
+                                   <div class="d-inline pt-2 pl-3">
+
+                                       <div>
+                                           <a href="/19/player/5645/Omar Alderete" class="player_name_players_table">Omar Alderete</a>
+                                       </div>
+
+                                       <div>
+                                              <span class="players_club_nation" style="display: inline-block;">
+                                                <a href="/19/players?page=1&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=all_nif&club=111711" data-original-title="Club Atlético Huracán" data-toggle="tooltip" data-placement="top"><img style="width:20px;" src="https://cdn.futbin.com/content/fifa19/img/clubs/111711.png"></a>
+                                                <a href="/19/players?page=1&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=all_nif&nation=58" data-original-title="Paraguay" data-toggle="tooltip" data-placement="top"><img style="width: 24px;" src="https://cdn.futbin.com/content/fifa19/img/nation/58.png"></a>
+                                                    <a href="/19/players?page=1&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=all_nif&league=353" data-original-title="SAF" data-toggle="tooltip" data-placement="top"><img style="width: 24px;" src="https://cdn.futbin.com/content/fifa19/img/league/353.png"></a>
+                                               </span>
+                                       </div>
+
+
+                                   </div>
+
+
+                                    </td>
+                                    <td><span class="form rating ut19  silver rare">73</span></td>
+                                    <td class="">CB</td>
+                                    <td class="mobile-hide-table-col">Normal</td>
+                                                                          <td><span class="ps4_color font-weight-bold">3.4K <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                                                                                                  
+                                                                                                                                                                                        <td>2<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
+                                    <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
+                                    <td><span style="font-weight: bold;" class="med_wr_text">M</span> \ <span style="font-weight: bold;" class="high_wr_text">H</span></td>
+                                    <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">68</span></td>
+
+                                    <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">59</span></td>
+                                    <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">63</span></td>
+                                    <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">63</span></td>
+                                    <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">71</span></td>
+                                    <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">78</span></td>
+                                    <td>188cm | 6'2"</td>
+                                    <td>0</td>
+                                    <td>402</td>
+                                    <td>1868</td>
+                                    
+                                                                        
+                                    
+                                    
+                                                                    </tr>
+
+                                                            <tr class="player_tr_1" data-url="/19/player/5658/Valeri Qazaishvili">
+                                    <td class="table-row-text row" style="text-align: left;">
+
+                                       <div class="d-inline">
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/205401.png?v=10" >
                                            </div>
                                     
                                    <div class="d-inline pt-2 pl-3">
@@ -9775,7 +9913,7 @@
                                     <td><span class="form rating ut19  silver rare">73</span></td>
                                     <td class="">LM</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">400 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">350 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>4<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>5<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -9788,7 +9926,7 @@
                                     <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">41</span></td>
                                     <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">63</span></td>
                                     <td>174cm | 5'9"</td>
-                                    <td class="mobile-hide-table-col">0</td>
+                                    <td>2</td>
                                     <td>390</td>
                                     <td>1858</td>
                                     
@@ -9801,7 +9939,7 @@
                                     <td class="table-row-text row" style="text-align: left;">
 
                                        <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/215568.png?v=9" >
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/215568.png?v=10" >
                                            </div>
                                     
                                    <div class="d-inline pt-2 pl-3">
@@ -9826,7 +9964,7 @@
                                     <td><span class="form rating ut19  silver rare">73</span></td>
                                     <td class="">LM</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">700 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">400 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>4<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>4<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -9839,7 +9977,7 @@
                                     <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">23</span></td>
                                     <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">59</span></td>
                                     <td>182cm | 6'0"</td>
-                                    <td class="mobile-hide-table-col">0</td>
+                                    <td>0</td>
                                     <td>375</td>
                                     <td>1759</td>
                                     
@@ -9852,7 +9990,7 @@
                                     <td class="table-row-text row" style="text-align: left;">
 
                                        <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver non-rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/142499.png?v=9" >
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver non-rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/142499.png?v=10" >
                                            </div>
                                     
                                    <div class="d-inline pt-2 pl-3">
@@ -9877,7 +10015,7 @@
                                     <td><span class="form rating ut19  silver non-rare">73</span></td>
                                     <td class="">CDM</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">350 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">200 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>4<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -9890,7 +10028,7 @@
                                     <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">68</span></td>
                                     <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">75</span></td>
                                     <td>181cm | 5'11"</td>
-                                    <td class="mobile-hide-table-col">0</td>
+                                    <td>0</td>
                                     <td>410</td>
                                     <td>1977</td>
                                     
@@ -9903,7 +10041,7 @@
                                     <td class="table-row-text row" style="text-align: left;">
 
                                        <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/189557.png?v=9" >
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/189557.png?v=10" >
                                            </div>
                                     
                                    <div class="d-inline pt-2 pl-3">
@@ -9928,7 +10066,7 @@
                                     <td><span class="form rating ut19  silver rare">73</span></td>
                                     <td class="">RB</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">3K <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">1.2K <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -9941,7 +10079,7 @@
                                     <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">68</span></td>
                                     <td><span class="badge green  stat_text_green rounded p-2 font-weight-normal">81</span></td>
                                     <td>188cm | 6'2"</td>
-                                    <td class="mobile-hide-table-col">0</td>
+                                    <td>0</td>
                                     <td>430</td>
                                     <td>1959</td>
                                     
@@ -9954,7 +10092,7 @@
                                     <td class="table-row-text row" style="text-align: left;">
 
                                        <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/189975.png?v=9" >
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/189975.png?v=10" >
                                            </div>
                                     
                                    <div class="d-inline pt-2 pl-3">
@@ -9979,7 +10117,7 @@
                                     <td><span class="form rating ut19  silver rare">73</span></td>
                                     <td class="">ST</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">900 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">750 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -9992,7 +10130,7 @@
                                     <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">45</span></td>
                                     <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">79</span></td>
                                     <td>187cm | 6'2"</td>
-                                    <td class="mobile-hide-table-col">0</td>
+                                    <td>-1</td>
                                     <td>379</td>
                                     <td>1829</td>
                                     
@@ -10005,7 +10143,7 @@
                                     <td class="table-row-text row" style="text-align: left;">
 
                                        <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver non-rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/176029.png?v=9" >
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver non-rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/176029.png?v=10" >
                                            </div>
                                     
                                    <div class="d-inline pt-2 pl-3">
@@ -10030,7 +10168,7 @@
                                     <td><span class="form rating ut19  silver non-rare">73</span></td>
                                     <td class="">LW</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">600 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">650 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>4<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>4<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10043,7 +10181,7 @@
                                     <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">44</span></td>
                                     <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">63</span></td>
                                     <td>172cm | 5'8"</td>
-                                    <td class="mobile-hide-table-col">2</td>
+                                    <td>2</td>
                                     <td>400</td>
                                     <td>1923</td>
                                     
@@ -10056,7 +10194,7 @@
                                     <td class="table-row-text row" style="text-align: left;">
 
                                        <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/229473.png?v=9" >
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/229473.png?v=10" >
                                            </div>
                                     
                                    <div class="d-inline pt-2 pl-3">
@@ -10081,7 +10219,7 @@
                                     <td><span class="form rating ut19  silver rare">73</span></td>
                                     <td class="">CM</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">350 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">500 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>4<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10094,7 +10232,7 @@
                                     <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">60</span></td>
                                     <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">60</span></td>
                                     <td>170cm | 5'7"</td>
-                                    <td class="mobile-hide-table-col">1</td>
+                                    <td>5</td>
                                     <td>418</td>
                                     <td>2024</td>
                                     
@@ -10107,7 +10245,7 @@
                                     <td class="table-row-text row" style="text-align: left;">
 
                                        <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/220209.png?v=9" >
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/220209.png?v=10" >
                                            </div>
                                     
                                    <div class="d-inline pt-2 pl-3">
@@ -10132,7 +10270,7 @@
                                     <td><span class="form rating ut19  silver rare">73</span></td>
                                     <td class="">LB</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">2.6K <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">900 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10145,7 +10283,7 @@
                                     <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">70</span></td>
                                     <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">77</span></td>
                                     <td>178cm | 5'10"</td>
-                                    <td class="mobile-hide-table-col">1</td>
+                                    <td>-8</td>
                                     <td>405</td>
                                     <td>1876</td>
                                     
@@ -10158,7 +10296,7 @@
                                     <td class="table-row-text row" style="text-align: left;">
 
                                        <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/226803.png?v=9" >
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/226803.png?v=10" >
                                            </div>
                                     
                                    <div class="d-inline pt-2 pl-3">
@@ -10183,7 +10321,7 @@
                                     <td><span class="form rating ut19  silver rare">73</span></td>
                                     <td class="">CB</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">450 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">550 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>2<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>2<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10196,7 +10334,7 @@
                                     <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">70</span></td>
                                     <td><span class="badge green  stat_text_green rounded p-2 font-weight-normal">82</span></td>
                                     <td>188cm | 6'2"</td>
-                                    <td class="mobile-hide-table-col">-1</td>
+                                    <td>4</td>
                                     <td>357</td>
                                     <td>1592</td>
                                     
@@ -10209,7 +10347,7 @@
                                     <td class="table-row-text row" style="text-align: left;">
 
                                        <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/199729.png?v=9" >
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/199729.png?v=10" >
                                            </div>
                                     
                                    <div class="d-inline pt-2 pl-3">
@@ -10234,7 +10372,7 @@
                                     <td><span class="form rating ut19  silver rare">73</span></td>
                                     <td class="">LM</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">1.1K <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">1.3K <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>4<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10247,7 +10385,7 @@
                                     <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">47</span></td>
                                     <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">72</span></td>
                                     <td>177cm | 5'10"</td>
-                                    <td class="mobile-hide-table-col">-2</td>
+                                    <td>-2</td>
                                     <td>417</td>
                                     <td>1964</td>
                                     
@@ -10260,7 +10398,7 @@
                                     <td class="table-row-text row" style="text-align: left;">
 
                                        <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/209449.png?v=9" >
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/209449.png?v=10" >
                                            </div>
                                     
                                    <div class="d-inline pt-2 pl-3">
@@ -10285,7 +10423,7 @@
                                     <td><span class="form rating ut19  silver rare">73</span></td>
                                     <td class="">RW</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">550 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">1.5K <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>2<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10298,7 +10436,7 @@
                                     <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">38</span></td>
                                     <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">49</span></td>
                                     <td>172cm | 5'8"</td>
-                                    <td class="mobile-hide-table-col">1</td>
+                                    <td>1</td>
                                     <td>383</td>
                                     <td>1811</td>
                                     
@@ -10311,7 +10449,7 @@
                                     <td class="table-row-text row" style="text-align: left;">
 
                                        <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/190560.png?v=9" >
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/190560.png?v=10" >
                                            </div>
                                     
                                    <div class="d-inline pt-2 pl-3">
@@ -10336,7 +10474,7 @@
                                     <td><span class="form rating ut19  silver rare">73</span></td>
                                     <td class="">CB</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">2K <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">750 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>2<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10349,7 +10487,7 @@
                                     <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">71</span></td>
                                     <td><span class="badge green  stat_text_green rounded p-2 font-weight-normal">83</span></td>
                                     <td>196cm | 6'5"</td>
-                                    <td class="mobile-hide-table-col">0</td>
+                                    <td>0</td>
                                     <td>343</td>
                                     <td>1581</td>
                                     
@@ -10362,7 +10500,7 @@
                                     <td class="table-row-text row" style="text-align: left;">
 
                                        <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/214615.png?v=9" >
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/214615.png?v=10" >
                                            </div>
                                     
                                    <div class="d-inline pt-2 pl-3">
@@ -10387,7 +10525,7 @@
                                     <td><span class="form rating ut19  silver rare">73</span></td>
                                     <td class="">ST</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">1K <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">800 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>2<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10400,7 +10538,7 @@
                                     <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">26</span></td>
                                     <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">69</span></td>
                                     <td>183cm | 6'0"</td>
-                                    <td class="mobile-hide-table-col">0</td>
+                                    <td>0</td>
                                     <td>360</td>
                                     <td>1725</td>
                                     
@@ -10413,7 +10551,7 @@
                                     <td class="table-row-text row" style="text-align: left;">
 
                                        <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/214369.png?v=9" >
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/214369.png?v=10" >
                                            </div>
                                     
                                    <div class="d-inline pt-2 pl-3">
@@ -10438,7 +10576,7 @@
                                     <td><span class="form rating ut19  silver rare">73</span></td>
                                     <td class="">LM</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">2.2K <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">2.4K <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>2<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10451,7 +10589,7 @@
                                     <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">46</span></td>
                                     <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">61</span></td>
                                     <td>177cm | 5'10"</td>
-                                    <td class="mobile-hide-table-col">0</td>
+                                    <td>0</td>
                                     <td>397</td>
                                     <td>1866</td>
                                     
@@ -10464,7 +10602,7 @@
                                     <td class="table-row-text row" style="text-align: left;">
 
                                        <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/209723.png?v=9" >
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/209723.png?v=10" >
                                            </div>
                                     
                                    <div class="d-inline pt-2 pl-3">
@@ -10489,7 +10627,7 @@
                                     <td><span class="form rating ut19  silver rare">73</span></td>
                                     <td class="">ST</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">500 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">550 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10502,7 +10640,7 @@
                                     <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">49</span></td>
                                     <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">67</span></td>
                                     <td>169cm | 5'7"</td>
-                                    <td class="mobile-hide-table-col">1</td>
+                                    <td>2</td>
                                     <td>408</td>
                                     <td>1978</td>
                                     
@@ -10515,7 +10653,7 @@
                                     <td class="table-row-text row" style="text-align: left;">
 
                                        <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/200446.png?v=9" >
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/200446.png?v=10" >
                                            </div>
                                     
                                    <div class="d-inline pt-2 pl-3">
@@ -10540,7 +10678,7 @@
                                     <td><span class="form rating ut19  silver rare">73</span></td>
                                     <td class="">ST</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">650 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">750 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>4<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>4<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10553,7 +10691,7 @@
                                     <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">34</span></td>
                                     <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">65</span></td>
                                     <td>169cm | 5'7"</td>
-                                    <td class="mobile-hide-table-col">0</td>
+                                    <td>0</td>
                                     <td>393</td>
                                     <td>1916</td>
                                     
@@ -10566,7 +10704,7 @@
                                     <td class="table-row-text row" style="text-align: left;">
 
                                        <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/192560.png?v=9" >
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/192560.png?v=10" >
                                            </div>
                                     
                                    <div class="d-inline pt-2 pl-3">
@@ -10591,7 +10729,7 @@
                                     <td><span class="form rating ut19  silver rare">73</span></td>
                                     <td class="">RM</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">800 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">350 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>4<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>4<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10604,7 +10742,7 @@
                                     <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">63</span></td>
                                     <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">76</span></td>
                                     <td>177cm | 5'10"</td>
-                                    <td class="mobile-hide-table-col">0</td>
+                                    <td>1</td>
                                     <td>420</td>
                                     <td>1966</td>
                                     
@@ -10617,7 +10755,7 @@
                                     <td class="table-row-text row" style="text-align: left;">
 
                                        <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver non-rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/169324.png?v=9" >
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver non-rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/169324.png?v=10" >
                                            </div>
                                     
                                    <div class="d-inline pt-2 pl-3">
@@ -10642,7 +10780,7 @@
                                     <td><span class="form rating ut19  silver non-rare">73</span></td>
                                     <td class="">LB</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">600 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">500 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10655,7 +10793,7 @@
                                     <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">69</span></td>
                                     <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">71</span></td>
                                     <td>175cm | 5'9"</td>
-                                    <td class="mobile-hide-table-col">-1</td>
+                                    <td>0</td>
                                     <td>409</td>
                                     <td>1963</td>
                                     
@@ -10668,7 +10806,7 @@
                                     <td class="table-row-text row" style="text-align: left;">
 
                                        <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/226627.png?v=9" >
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/226627.png?v=10" >
                                            </div>
                                     
                                    <div class="d-inline pt-2 pl-3">
@@ -10706,7 +10844,7 @@
                                     <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">40</span></td>
                                     <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">62</span></td>
                                     <td>174cm | 5'9"</td>
-                                    <td class="mobile-hide-table-col">1</td>
+                                    <td>5</td>
                                     <td>400</td>
                                     <td>1888</td>
                                     
@@ -10719,7 +10857,7 @@
                                     <td class="table-row-text row" style="text-align: left;">
 
                                        <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/221641.png?v=9" >
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/221641.png?v=10" >
                                            </div>
                                     
                                    <div class="d-inline pt-2 pl-3">
@@ -10744,7 +10882,7 @@
                                     <td><span class="form rating ut19  silver rare">73</span></td>
                                     <td class="">CB</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">600 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">400 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>2<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10757,7 +10895,7 @@
                                     <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">73</span></td>
                                     <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">79</span></td>
                                     <td>188cm | 6'2"</td>
-                                    <td class="mobile-hide-table-col">0</td>
+                                    <td>4</td>
                                     <td>374</td>
                                     <td>1676</td>
                                     
@@ -10770,7 +10908,7 @@
                                     <td class="table-row-text row" style="text-align: left;">
 
                                        <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/200831.png?v=9" >
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/200831.png?v=10" >
                                            </div>
                                     
                                    <div class="d-inline pt-2 pl-3">
@@ -10795,7 +10933,7 @@
                                     <td><span class="form rating ut19  silver rare">73</span></td>
                                     <td class="">CAM</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">600 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">400 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>4<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>4<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10808,7 +10946,7 @@
                                     <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">38</span></td>
                                     <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">70</span></td>
                                     <td>185cm | 6'1"</td>
-                                    <td class="mobile-hide-table-col">1</td>
+                                    <td>10</td>
                                     <td>395</td>
                                     <td>1848</td>
                                     
@@ -10821,7 +10959,7 @@
                                     <td class="table-row-text row" style="text-align: left;">
 
                                        <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/201895.png?v=9" >
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/201895.png?v=10" >
                                            </div>
                                     
                                    <div class="d-inline pt-2 pl-3">
@@ -10846,7 +10984,7 @@
                                     <td><span class="form rating ut19  silver rare">73</span></td>
                                     <td class="">CAM</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">400 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">450 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>4<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>2<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -10859,7 +10997,7 @@
                                     <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">43</span></td>
                                     <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">58</span></td>
                                     <td>173cm | 5'8"</td>
-                                    <td class="mobile-hide-table-col">0</td>
+                                    <td>2</td>
                                     <td>390</td>
                                     <td>1859</td>
                                     
@@ -10872,7 +11010,7 @@
                                     <td class="table-row-text row" style="text-align: left;">
 
                                        <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver non-rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/227789.png?v=9" >
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver non-rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/227789.png?v=10" >
                                            </div>
                                     
                                    <div class="d-inline pt-2 pl-3">
@@ -10910,7 +11048,7 @@
                                     <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">34</span></td>
                                     <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">66</span></td>
                                     <td>181cm | 5'11"</td>
-                                    <td class="mobile-hide-table-col">-2</td>
+                                    <td>-1</td>
                                     <td>389</td>
                                     <td>1777</td>
                                     
@@ -10923,7 +11061,7 @@
                                     <td class="table-row-text row" style="text-align: left;">
 
                                        <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/137109.png?v=9" >
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/137109.png?v=10" >
                                            </div>
                                     
                                    <div class="d-inline pt-2 pl-3">
@@ -10961,7 +11099,7 @@
                                     <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">69</span></td>
                                     <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">63</span></td>
                                     <td>178cm | 5'10"</td>
-                                    <td class="mobile-hide-table-col">2</td>
+                                    <td>2</td>
                                     <td>376</td>
                                     <td>1928</td>
                                     
@@ -10974,7 +11112,7 @@
                                     <td class="table-row-text row" style="text-align: left;">
 
                                        <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/221919.png?v=9" >
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/221919.png?v=10" >
                                            </div>
                                     
                                    <div class="d-inline pt-2 pl-3">
@@ -10999,7 +11137,7 @@
                                     <td><span class="form rating ut19  silver rare">73</span></td>
                                     <td class="">RW</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">650 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">500 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>4<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -11012,7 +11150,7 @@
                                     <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">34</span></td>
                                     <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">60</span></td>
                                     <td>176cm | 5'9"</td>
-                                    <td class="mobile-hide-table-col">1</td>
+                                    <td>6</td>
                                     <td>392</td>
                                     <td>1812</td>
                                     
@@ -11025,7 +11163,7 @@
                                     <td class="table-row-text row" style="text-align: left;">
 
                                        <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/232869.png?v=9" >
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/232869.png?v=10" >
                                            </div>
                                     
                                    <div class="d-inline pt-2 pl-3">
@@ -11050,7 +11188,7 @@
                                     <td><span class="form rating ut19  silver rare">73</span></td>
                                     <td class="">CB</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">850 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">700 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>2<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>4<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -11063,7 +11201,7 @@
                                     <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">74</span></td>
                                     <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">77</span></td>
                                     <td>182cm | 6'0"</td>
-                                    <td class="mobile-hide-table-col">-1</td>
+                                    <td>5</td>
                                     <td>373</td>
                                     <td>1682</td>
                                     
@@ -11076,7 +11214,7 @@
                                     <td class="table-row-text row" style="text-align: left;">
 
                                        <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/178475.png?v=9" >
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/178475.png?v=10" >
                                            </div>
                                     
                                    <div class="d-inline pt-2 pl-3">
@@ -11101,7 +11239,7 @@
                                     <td><span class="form rating ut19  silver rare">73</span></td>
                                     <td class="">ST</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">550 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">1.5K <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>2<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -11114,7 +11252,7 @@
                                     <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">26</span></td>
                                     <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">73</span></td>
                                     <td>190cm | 6'3"</td>
-                                    <td class="mobile-hide-table-col">2</td>
+                                    <td>3</td>
                                     <td>333</td>
                                     <td>1566</td>
                                     
@@ -11127,7 +11265,7 @@
                                     <td class="table-row-text row" style="text-align: left;">
 
                                        <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/173132.png?v=9" >
+                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/173132.png?v=10" >
                                            </div>
                                     
                                    <div class="d-inline pt-2 pl-3">
@@ -11152,7 +11290,7 @@
                                     <td><span class="form rating ut19  silver rare">73</span></td>
                                     <td class="">ST</td>
                                     <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">750 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
+                                                                          <td><span class="ps4_color font-weight-bold">2K <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
                                                                                                                                                   
                                                                                                                                                                                         <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
                                     <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
@@ -11165,111 +11303,9 @@
                                     <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">35</span></td>
                                     <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">67</span></td>
                                     <td>179cm | 5'10"</td>
-                                    <td class="mobile-hide-table-col">0</td>
+                                    <td>-1</td>
                                     <td>378</td>
                                     <td>1782</td>
-                                    
-                                                                        
-                                    
-                                    
-                                                                    </tr>
-
-                                                            <tr class="player_tr_1" data-url="/19/player/6225/Guilherme">
-                                    <td class="table-row-text row" style="text-align: left;">
-
-                                       <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/200438.png?v=9" >
-                                           </div>
-                                    
-                                   <div class="d-inline pt-2 pl-3">
-
-                                       <div>
-                                           <a href="/19/player/6225/Guilherme Costa Marques" class="player_name_players_table">Guilherme</a>
-                                       </div>
-
-                                       <div>
-                                              <span class="players_club_nation" style="display: inline-block;">
-                                                <a href="/19/players?page=1&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=all_nif&club=113259" data-original-title="Evkur Yeni Malatyaspor" data-toggle="tooltip" data-placement="top"><img style="width:20px;" src="https://cdn.futbin.com/content/fifa19/img/clubs/113259.png"></a>
-                                                <a href="/19/players?page=1&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=all_nif&nation=54" data-original-title="Brazil" data-toggle="tooltip" data-placement="top"><img style="width: 24px;" src="https://cdn.futbin.com/content/fifa19/img/nation/54.png"></a>
-                                                    <a href="/19/players?page=1&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=all_nif&league=68" data-original-title="Süper Lig" data-toggle="tooltip" data-placement="top"><img style="width: 24px;" src="https://cdn.futbin.com/content/fifa19/img/league/68.png"></a>
-                                               </span>
-                                       </div>
-
-
-                                   </div>
-
-
-                                    </td>
-                                    <td><span class="form rating ut19  silver rare">73</span></td>
-                                    <td class="">CAM</td>
-                                    <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">800 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
-                                                                                                                                                  
-                                                                                                                                                                                        <td>4<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
-                                    <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
-                                    <td><span style="font-weight: bold;" class="med_wr_text">M</span> \ <span style="font-weight: bold;" class="med_wr_text">M</span></td>
-                                    <td><span class="badge success-color-dark stat_text_dark_green rounded p-2 font-weight-normal">92</span></td>
-
-                                    <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">65</span></td>
-                                    <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">66</span></td>
-                                    <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">77</span></td>
-                                    <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">51</span></td>
-                                    <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">64</span></td>
-                                    <td>174cm | 5'9"</td>
-                                    <td class="mobile-hide-table-col">0</td>
-                                    <td>415</td>
-                                    <td>1955</td>
-                                    
-                                                                        
-                                    
-                                    
-                                                                    </tr>
-
-                                                            <tr class="player_tr_2" data-url="/19/player/6227/Nacer Barazite">
-                                    <td class="table-row-text row" style="text-align: left;">
-
-                                       <div class="d-inline">
-                                            <img style="padding: 0;" class="player_img player_right_curve lazy-main-player form rating ut19  silver rare" src="/design/img/blank_player.png" data-original="https://cdn.futbin.com/content/fifa19/img/players/183519.png?v=9" >
-                                           </div>
-                                    
-                                   <div class="d-inline pt-2 pl-3">
-
-                                       <div>
-                                           <a href="/19/player/6227/Nacer Barazite" class="player_name_players_table">Nacer Barazite</a>
-                                       </div>
-
-                                       <div>
-                                              <span class="players_club_nation" style="display: inline-block;">
-                                                <a href="/19/players?page=1&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=all_nif&club=113259" data-original-title="Evkur Yeni Malatyaspor" data-toggle="tooltip" data-placement="top"><img style="width:20px;" src="https://cdn.futbin.com/content/fifa19/img/clubs/113259.png"></a>
-                                                <a href="/19/players?page=1&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=all_nif&nation=34" data-original-title="Holland" data-toggle="tooltip" data-placement="top"><img style="width: 24px;" src="https://cdn.futbin.com/content/fifa19/img/nation/34.png"></a>
-                                                    <a href="/19/players?page=1&position=CB,LB,LWB,RB,RWB,CDM,CM,CAM,CF,ST,LM,LW,LF,RM,RW,RF&version=all_nif&league=68" data-original-title="Süper Lig" data-toggle="tooltip" data-placement="top"><img style="width: 24px;" src="https://cdn.futbin.com/content/fifa19/img/league/68.png"></a>
-                                               </span>
-                                       </div>
-
-
-                                   </div>
-
-
-                                    </td>
-                                    <td><span class="form rating ut19  silver rare">73</span></td>
-                                    <td class="">CAM</td>
-                                    <td class="mobile-hide-table-col">Normal</td>
-                                                                          <td><span class="ps4_color font-weight-bold">500 <img alt="c" class="small-coins-icon" src="/design/img/coins_bin.png"></span> </td>
-                                                                                                                                                  
-                                                                                                                                                                                        <td>3<i style="font-size: 10px;" class="icon-star-full stars-"></i></td>
-                                    <td>3<i style="font-size: 10px;" class="icon-star-full stars"></i></td>
-                                    <td><span style="font-weight: bold;" class="med_wr_text">M</span> \ <span style="font-weight: bold;" class="low_wr_text">L</span></td>
-                                    <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">67</span></td>
-
-                                    <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">68</span></td>
-                                    <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">70</span></td>
-                                    <td><span class="badge yellow darken-2  stat_text_yellow rounded p-2 font-weight-normal">76</span></td>
-                                    <td><span class="badge red  stat_text_red rounded p-2 font-weight-normal">36</span></td>
-                                    <td><span class="badge orange darken-1  stat_text_orange rounded p-2 font-weight-normal">59</span></td>
-                                    <td>188cm | 6'2"</td>
-                                    <td class="mobile-hide-table-col">-1</td>
-                                    <td>376</td>
-                                    <td>1801</td>
                                     
                                                                         
                                     
@@ -11433,24 +11469,24 @@
                 <h6 class="text-uppercase font-weight-bold">Latest Squads</h6>
                 <hr class="primary-color accent-2 mb-2 mt-0 d-inline-block mx-auto" style="width: 60px;">
                                     <p>
-                            <a data-original-title="31.10.18" data-rel="tooltip" data-placement="right" href="/totw/TOTW7">
-                                TOTW7                            </a>
+                            <a data-original-title="26.12.18" data-rel="tooltip" data-placement="right" href="/totw/TOTW15">
+                                TOTW15                            </a>
                         </p>
                                             <p>
-                            <a data-original-title="24.10.18" data-rel="tooltip" data-placement="right" href="/totw/TOTW6">
-                                TOTW6                            </a>
+                            <a data-original-title="21.12.18" data-rel="tooltip" data-placement="right" href="/totw/UCLLIVE2">
+                                UCLLIVE2                            </a>
                         </p>
                                             <p>
-                            <a data-original-title="19.10.18" data-rel="tooltip" data-placement="right" href="/totw/UltimateScream">
-                                UltimateScream                            </a>
+                            <a data-original-title="19.12.18" data-rel="tooltip" data-placement="right" href="/totw/TOTW14">
+                                TOTW14                            </a>
                         </p>
                                             <p>
-                            <a data-original-title="17.10.18" data-rel="tooltip" data-placement="right" href="/totw/TOTW5">
-                                TOTW5                            </a>
+                            <a data-original-title="12.12.18" data-rel="tooltip" data-placement="right" href="/totw/TOTW13">
+                                TOTW13                            </a>
                         </p>
                                             <p>
-                            <a data-original-title="10.10.18" data-rel="tooltip" data-placement="right" href="/totw/TOTW4">
-                                TOTW4                            </a>
+                            <a data-original-title="07.12.18" data-rel="tooltip" data-placement="right" href="/totw/TOTGS">
+                                TOTGS                            </a>
                         </p>
                     
             </div>
@@ -11607,7 +11643,7 @@
 <script  src="https://cdn.futbin.com/design/plugins/icheck-1.x/icheck.min.js?v=190918175213"> </script>
 <script  src="https://cdn.futbin.com/design/js/pages/players.min.js?v=190918175213"> </script>
 
-    <script src="https://cdn.futbin.com/design/js/custom.min.js?v=031018120352" type="text/javascript"></script>
+    <script src="https://cdn.futbin.com/design/js/custom.min.js?v=101118101721" type="text/javascript"></script>
 
 <script src="https://cdn.futbin.com/design/js/material/mdb.min.js?v=190918175213" type="text/javascript"></script>
 <script src="https://cdn.futbin.com/design/js/sidenav.js?v=190918175213" type="text/javascript"></script>
@@ -11733,6 +11769,6 @@
 
 <!--</div>-->
 <div id="site-backdrop" style="display: none;"></div>
-</body>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e92f15713e","applicationID":"76900545","transactionName":"NVRVZ0AHVkNTWxcMXgwedlBGD1deHUgPBEgHQ0Q=","queueTime":0,"applicationTime":136,"atts":"GRNWEQgdRU0=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 
 </html>
